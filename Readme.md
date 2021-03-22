@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Valeriya Zaytseva](https://up.htmlacademy.ru/adaptive/22/user/917085).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
