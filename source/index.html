@@ -250,5 +250,34 @@
         </a>
       </div>
     </footer>
+    <section class="page-modal page-modal--close">
+      <div class="page-modal__wrapper">
+        <h2 class="page-modal__title">
+          Добавить в корзину
+        </h2>
+        <p class="page-modal_text">
+          Выберите размер:
+        </p>
+        <form class="page-modal__form add-to-cart" method="post">
+          <div class="add-to-cart__wrapper">
+            <p>
+              <label class="add-to-cart__label" for="size_S">S</label>
+              <input class="add-to-cart__radio" type="radio" name="size" id="size_S" value="S" checked>
+            </p>
+            <p>
+              <label class="add-to-cart__label" for="size_M">M</label>
+              <input class="add-to-cart__radio" type="radio" name="size" id="size_M" value="M">
+            </p>
+            <p>
+              <label class="add-to-cart__label" for="size_S">L</label>
+              <input class="add-to-cart__radio" type="radio" name="size" id="size_L" value="L">
+            </p>
+          </div>
+          <button class="add-to-cart__button button" type="submit">
+            Добавить
+          </button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
