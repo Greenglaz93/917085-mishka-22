@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body class="page-body">
-    <header class="page-header">
-      <a class="page-header__logo">
+  <body class="page__body">
+    <header class="page__header page-header">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
       <nav class="page-header__main-nav main-nav main-nav--closed">
@@ -21,7 +21,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a>
                 Вязание на заказ
               </a>
             </li>
@@ -47,9 +47,9 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page__main page-main">
       <header class="page-main__header header">
-        <h1 class="header__title">Форма для заказа</h1>
+        <h1 class="header__title">Вязание на заказ</h1>
       </header>
       <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="page-main__form order-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -58,14 +58,14 @@
           <ul class="form-type__list">
             <li class="form-type__item">
               <label class="form-type__field radio">
-                <span>Аксессуар для интерьера</span>
                 <input class="radio__input" type="radio" name="type" value="accessory" checked>
+                <span class="radio__name">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="form-type__item">
               <label class="form-type__field radio">
-                <span>Детская игрушка</span>
                 <input class="radio__input" type="radio" name="type" value="toy">
+                <span class="radio__name">Детская игрушка</span>
               </label>
             </li>
           </ul>
@@ -75,81 +75,84 @@
           <ul class="form-color__list">
             <li class="form-color__item">
               <label class="form-color__field checkbox">
-                <span>Белый</span>
                 <input class="checkbox__input" type="checkbox" name="color" value="white" checked>
+                <span class="checkbox__name">Белый</span>
               </label>
             </li>
             <li class="form-color__item">
               <label class="form-color__field checkbox">
-                <span>Серый</span>
                 <input class="checkbox__input" type="checkbox" name="color" value="grey" checked>
+                <span class="checkbox__name">Серый</span>
               </label>
             </li>
             <li class="form-color__item">
-                <label class="form-color__field checkbox">
-                  <span>"Тиффани"</span>
-                  <input class="checkbox__input" type="checkbox" name="color" value="mint">
+              <label class="form-color__field checkbox">
+                <input class="checkbox__input" type="checkbox" name="color" value="mint">
+                <span class="checkbox__name">"Тиффани"</span>
                 </label>
             </li>
             <li class="form-color__item">
               <label class="form-color__field checkbox">
-                <span>Чёрный</span>
                 <input class="checkbox__input" type="checkbox" name="color" value="black">
+                <span class="checkbox__name">Чёрный</span>
               </label>
             </li>
             <li class="form-color__item">
               <label class="form-color__field checkbox">
-                <span>Розовый</span>
                 <input class="checkbox__input" type="checkbox" name="color" value="pink">
+                <span class="checkbox__name">Розовый</span>
               </label>
             </li>
             <li class="form-color__item">
               <label class="form-color__field checkbox">
-                <span>Оранжевый</span>
                 <input class="checkbox__input" type="checkbox" name="color" value="orange">
+                <span class="checkbox__name">Оранжевый</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="order-form__group form-group">
           <legend class="form-group__heading">ФИО</legend>
-          <ol class="form-group__list">
+          <ul class="form-group__list">
             <li class="form-group__item">
               <label class="form-group__field field">
-                <span>Имя:</span>
+                <span class="field__name">Имя:</span>
                 <input class="field__input" type="text" name="name" placeholder="Введите ваше имя*" required>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form-group__field field">
-                <span>Фамилия:</span>
+                <span class="field__name">Фамилия:</span>
                 <input class="field__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form-group__field field">
-                <span>Отчество:</span>
+                <span class="field__name">Отчество:</span>
                 <input class="field__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
               </label>
             </li>
-          </ol>
+          </ul>
         </fieldset>
-        <ul class="order-form__group form-group">
-          <li>
-            <span class="form-group__heading">Тел</span>
-            <label class="form-group__field field">
-              <span class="visually-hidden">Телефон</span>
-              <input class="field__input field__input--tel" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
-            </label>
-          </li>
-          <li>
-            <span class="form-group__heading">E-mail</span>
-            <label class="form-group__field field">
-              <span class="visually-hidden">E-mail</span>
-              <input class="field__input field__input--email" type="email" name="email" placeholder="Ваш Email*" required>
-            </label>
-          </li>
-        </ul>
+        <fieldset class="order-form__group form-group">
+          <legend class="visually-hidden">Контактная информация</legend>
+          <ul class="form-group__list">
+            <li class="form-group__item">
+              <span class="form-group__heading">Тел</span>
+              <label class="form-group__field field">
+                <span class="visually-hidden">Контактный телефон</span>
+                <input class="field__input field__input--tel" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
+              </label>
+            </li>
+            <li class="form-group__item">
+              <span class="form-group__heading">E-mail</span>
+              <label class="form-group__field field">
+                <span class="visually-hidden">Контактный e-mail</span>
+                <input class="field__input field__input--email" type="email" name="email" placeholder="Ваш Email*" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
         <div class="order-form__group form-group">
           <span class="form-group__heading">Доп</span>
           <label class="form-group__field field">
@@ -161,12 +164,12 @@
         <button class="order-form__button button" type="submit">Отправить заказ</button>
       </form>
     </main>
-    <footer class="page-footer">
-      <!-- <a class="page-footer__logo page-footer__logo--hidden">
+    <footer class="page__footer page-footer">
+      <a class="page-footer__logo">
         <img src="img/logo/logo-footer.svg" width="102" height="34" alt="Логотип магазина Мишка">
-      </a> -->
+      </a>
       <div class="page-footer__social social">
-        <ul class=social__list>
+        <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#">
               <span class="visually-hidden">Инстаграм</span>
