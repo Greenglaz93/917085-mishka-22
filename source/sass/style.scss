@@ -1,1 +1,11 @@
-// Начните писать стили здесь
+//GLobal
+
+@import "global/box-model.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+
+
+//Blocks
+
+@import "blocks/style.scss";
