@@ -1,0 +1,25 @@
+.products__title {
+  font-size: 27px;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+}
+
+.products__list {
+  @include clear-list;
+}
+
+.products__item {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white;
+
+  &--interior {
+    background-color: $primary-400;
+  }
+
+  &--toys {
+    background-color: $primary-500;
+  }
+}

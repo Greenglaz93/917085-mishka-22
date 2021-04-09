@@ -1,0 +1,19 @@
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+}
+
+.reviews__list {
+  @include clear-list;
+}
+
+.reviews__list figure {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+}
