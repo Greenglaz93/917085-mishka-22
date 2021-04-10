@@ -5,3 +5,7 @@
   font-weight: 700;
   color: $black;
 }
+
+.main-nav__list {
+  @include clear-list;
+}
