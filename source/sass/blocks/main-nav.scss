@@ -1,0 +1,11 @@
+.main-nav {
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+}
+
+.main-nav__list {
+  @include clear-list;
+}
