@@ -1,0 +1,11 @@
+.form-group__heading {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $primary-400;
+}
+
+.form-group__list {
+  @include clear-list;
+}

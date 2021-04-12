@@ -1,0 +1,27 @@
+.field__name {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black;
+}
+
+.field__input {
+  border: 0;
+  border-bottom: 2px solid $black;
+  width: 260px;
+  height: 52px;
+  padding: 17px 23px 17px 0;
+
+  &--textarea {
+    border: 2px solid $black;
+    padding: 17px;
+    height: 142px;
+  }
+}
+
+.field__input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: transparentize($color: $black, $amount: 0.3);
+}
