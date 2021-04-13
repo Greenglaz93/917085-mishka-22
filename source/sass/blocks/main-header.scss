@@ -1,6 +1,17 @@
 .main-header {
-  min-height: 488px;
-  background-image: url("../img/bg/hero-mobile@2x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 -18px;
+  min-height: 177px;
+  background-color: $grey-241;
+
+  &--index {
+    background-image: url("../img/bg/hero-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -18px;
+  }
+}
+
+.main-header__title {
+  font-size: 27px;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
 }
