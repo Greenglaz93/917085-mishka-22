@@ -11,6 +11,9 @@
   width: 260px;
   height: 52px;
   padding: 17px 23px 17px 0;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
 
   &--textarea {
     border: 2px solid $black;
@@ -20,8 +23,5 @@
 }
 
 .field__input::placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
   color: transparentize($color: $black, $amount: 0.3);
 }
