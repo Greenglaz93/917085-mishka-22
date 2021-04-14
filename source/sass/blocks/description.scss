@@ -1,0 +1,25 @@
+.description {
+  padding: 24px 32px 26px 28px;
+}
+
+.description__details {
+  border-bottom: 1px solid $grey-236;
+}
+
+.description__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+}
+
+.description__options {
+  font-size: 13px;
+}
+
+.description__price {
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+}

@@ -1,0 +1,15 @@
+.catalog {
+  padding: 30px 0;
+}
+
+.catalog__list {
+  @include clear-list;
+}
+
+.catalog__item {
+  border: 1px solid $grey-236;
+}
+
+.catalog__item:not(:last-child) {
+  margin-bottom: 30px;
+}
