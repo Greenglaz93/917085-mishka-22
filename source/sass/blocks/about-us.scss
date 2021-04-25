@@ -1,16 +1,26 @@
 .about-us {
   font-weight: 700;
   color: $black;
-  padding: 38px 30px;
+  padding-top: 31px;
 }
 
 .about-us__list {
   @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .about-us__title {
   font-size: 25px;
   margin: 0 0 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .about-us__item {
@@ -20,57 +30,101 @@
   padding-top: 60px;
   margin-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+
+    width: 334px;
+    margin-bottom: 57px;
+  }
+
   &::before {
     @include pseudo;
     display: block;
     background-repeat: no-repeat;
   }
 
-  &--eco::before {
-    width: 33px;
-    height: 38px;
-    background-image: url("../img/logo/eco.svg");
-    left: 0;
-    top: 6px;
+  &--eco {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+
+    &::before {
+      width: 33px;
+      height: 38px;
+      background-image: url("../img/logo/eco.svg");
+      left: 0;
+      top: 6px;
+    }
   }
 
-  &--price::before {
-    width: 47px;
-    height: 27px;
-    background-image: url("../img/logo/price.svg");
-    left: 0;
-    top: 6px;
+  &--price {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+
+    &::before {
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/logo/price.svg");
+      left: 0;
+      top: 6px;
+    }
   }
 
-  &--likes::before {
-    width: 34px;
-    height: 27px;
-    background-image: url("../img/logo/likes.svg");
-    left: 0;
-    top: 6px;
+  &--likes {
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
+
+    &::before {
+      width: 34px;
+      height: 27px;
+      background-image: url("../img/logo/likes.svg");
+      left: 0;
+      top: 6px;
+    }
   }
 
-  &--love::before {
-    width: 35px;
-    height: 34px;
-    background-image: url("../img/logo/love.svg");
-    left: 0;
-    top: 6px;
+  &--love {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+
+    &::before {
+      width: 35px;
+      height: 34px;
+      background-image: url("../img/logo/love.svg");
+      left: 0;
+      top: 6px;
+    }
   }
 
-  &--support::before {
-    width: 55px;
-    height: 23px;
-    background-image: url("../img/logo/support.svg");
-    left: 0;
-    top: 6px;
+  &--support {
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+
+    &::before {
+      width: 55px;
+      height: 23px;
+      background-image: url("../img/logo/support.svg");
+      left: 0;
+      top: 6px;
+    }
   }
 
-  &--gift::before {
-    width: 33px;
-    height: 32px;
-    background-image: url("../img/logo/gift.svg");
-    left: 0;
-    top: 6px;
+  &--gift {
+    @media (min-width: $tablet-width) {
+      order: 6;
+    }
+
+    &::before {
+      width: 33px;
+      height: 32px;
+      background-image: url("../img/logo/gift.svg");
+      left: 0;
+      top: 6px;
+    }
   }
 }
