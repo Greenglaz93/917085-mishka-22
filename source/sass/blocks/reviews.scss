@@ -73,6 +73,10 @@
     font-size: 17px;
     width: 650px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 806px;
+  }
 }
 
 .reviews__author {
@@ -86,16 +90,16 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 50px;
   }
 }
 
 .reviews__write {
   width: 260px;
-  height: 52px;
 
   @media (min-width: $tablet-width) {
-    width: 175px;
+    display: block;
+    width: 171px;
     order: 2;
     align-content: center;
   }

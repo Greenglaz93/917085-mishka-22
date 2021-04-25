@@ -40,7 +40,6 @@
 
   &::before {
     @include pseudo;
-    display: block;
     background-repeat: no-repeat;
   }
 
