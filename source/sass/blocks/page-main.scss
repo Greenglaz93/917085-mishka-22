@@ -1,3 +1,19 @@
+.page-main__header {
+  @include wrapper;
+}
+
+.page-main__top-offer {
+  @include wrapper;
+}
+
+.page-main__about {
+  @include wrapper;
+}
+
+.page-main__reviews {
+  @include wrapper;
+}
+
 .page-main__description {
   font-size: 13px;
   line-height: 24px;

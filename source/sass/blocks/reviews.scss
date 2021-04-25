@@ -1,8 +1,13 @@
 .reviews {
-  padding-top: 78px;
+  padding: 20px 30px 45px;
+  background-color: $white;
   background-image: url("../img/bg/review.jpg");
   background-repeat: no-repeat;
   background-position: 0;
+
+  @media (max-width: $mobile-width-only) {
+    background-image: none;
+  }
 }
 
 .reviews__title {
@@ -10,11 +15,20 @@
   line-height: 30px;
   font-weight: 700;
   color: $black;
-  margin: 0;
+  margin: 0 0 14px;
 }
 
 .reviews__list {
   @include clear-list;
+  margin-bottom: 30px;
+}
+
+.reviews__item {
+  display: none;
+
+  &--current {
+    display: block;
+  }
 }
 
 .reviews__list figure {
@@ -22,5 +36,14 @@
 }
 
 .reviews__text {
-  margin: 0;
+  margin: 0 0 33px;
+}
+
+.reviews__toggles {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.reviews__write {
+  width: 260px;
 }

@@ -1,18 +1,45 @@
-.products__list {
-  @include clear-list;
+.products__item {
+  position: relative;
+
+  &--interior {
+    background-color: $primary-400;
+
+    &::after {
+      @include pseudo;
+      width: 40px;
+      height: 62px;
+      right: 36px;
+      top: 23px;
+
+      background-image: url("../img/logo/interior.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--toys {
+    background-color: $primary-500;
+
+    &::after {
+      @include pseudo;
+      width: 60px;
+      height: 60px;
+      right: 27px;
+      top: 21px;
+
+      background-image: url("../img/logo/toy.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
-.products__item {
+.products__link {
+  display: block;
+  position: relative;
+
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   color: $white;
 
-  &--interior {
-    background-color: $primary-400;
-  }
-
-  &--toys {
-    background-color: $primary-500;
-  }
+  padding: 24px 160px 31px 30px;
 }

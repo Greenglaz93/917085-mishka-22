@@ -1,12 +1,28 @@
+.contacts {
+  padding: 38px 0;
+}
+
+.contacts__wrapper {
+  @include wrapper;
+  padding: 0 30px;
+}
+
 .contacts__title {
   font-size: 18px;
   font-weight: 700;
   color: $black;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .contacts__info {
   font-size: 14px;
   margin: 0;
+  margin-bottom: 42px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 33px;
+  row-gap: 33px;
 }
 
 .contacts__value,
@@ -14,6 +30,20 @@
   margin: 0;
 }
 
+.contacts__type {
+  max-width: 76px;
+}
+
 .contacts__email {
   border-bottom: 1px solid $primary-400;
+}
+
+.contacts__map {
+  width: 100%;
+  margin: 0 auto 42px;
+}
+
+.contacts__write {
+  margin: 0 auto;
+  width: 260px;
 }

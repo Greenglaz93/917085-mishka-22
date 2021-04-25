@@ -1,0 +1,25 @@
+.user__link {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.user__icon {
+  margin-right: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 31px;
+  }
+}
+
+.user__title {
+  &--search {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

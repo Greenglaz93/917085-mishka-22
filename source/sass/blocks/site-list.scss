@@ -1,0 +1,5 @@
+.site-list__item:not(:nth-child(even)) {
+  @media (min-width: $tablet-width) {
+    margin-right: 36px;
+  }
+}

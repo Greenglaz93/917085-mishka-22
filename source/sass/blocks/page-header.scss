@@ -1,4 +1,48 @@
 .page-header {
   background-color: $white;
   border-bottom: 1px solid $grey-236;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+  }
+}
+
+.page-header__main-nav {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 346px;
+    column-gap: 17px;
+    grid-template-rows: 89px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 405px 1fr 346px;
+  }
+}
+
+.page-header__delivery {
+  font-size: 15px;
+  font-weight: 400;
+  color: $grey;
+  line-height: 24px;
+
+  display: none;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
 }
