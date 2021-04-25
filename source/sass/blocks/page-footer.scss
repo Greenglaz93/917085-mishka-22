@@ -1,4 +1,30 @@
 .page-footer {
   background-color: $grey-241;
   min-height: 160px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 143px;
+  }
+}
+
+.page-footer__logo {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.page-footer .content-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 28px 50px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 28px 0;
+  }
 }

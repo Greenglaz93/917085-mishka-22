@@ -1,6 +1,18 @@
+.copyright {
+  padding: 22px 0;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .copyright__title {
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
   color: $black;
+
+  margin-right: 39px;
 }
