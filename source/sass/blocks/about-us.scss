@@ -60,10 +60,6 @@
   }
 
   &--eco {
-    @media (min-width: $tablet-width) {
-      // order: 1;
-    }
-
     &::before {
       width: 33px;
       height: 38px;
@@ -72,10 +68,6 @@
   }
 
   &--price {
-    @media (min-width: $tablet-width) {
-      // order: 3;
-    }
-
     &::before {
       width: 47px;
       height: 27px;
@@ -84,10 +76,6 @@
   }
 
   &--likes {
-    @media (min-width: $tablet-width) {
-      // order: 5;
-    }
-
     &::before {
       width: 34px;
       height: 27px;
@@ -96,10 +84,6 @@
   }
 
   &--love {
-    @media (min-width: $tablet-width) {
-      // order: 2;
-    }
-
     &::before {
       width: 35px;
       height: 34px;
@@ -108,10 +92,6 @@
   }
 
   &--support {
-    @media (min-width: $tablet-width) {
-      // order: 4;
-    }
-
     &::before {
       width: 55px;
       height: 23px;
@@ -120,10 +100,6 @@
   }
 
   &--gift {
-    @media (min-width: $tablet-width) {
-      // order: 6;
-    }
-
     &::before {
       width: 33px;
       height: 32px;
