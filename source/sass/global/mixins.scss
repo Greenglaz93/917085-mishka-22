@@ -22,3 +22,19 @@
     max-width: $desktop-width;
   }
 }
+
+@mixin content-wrapper($width: 260px, $padding: 0 30px) {
+  width: 260px;
+  padding: 0 30px;
+  box-sizing: content-box;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 875px;
+    padding: 0 50px 0 225px;
+  }
+}

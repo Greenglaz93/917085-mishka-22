@@ -1,21 +1,13 @@
+.page-main {
+  width: 100vw;
+}
+
 .page-main__header {
-  @include wrapper;
-}
-
-.page-main__top-offer {
-  @include wrapper;
-}
-
-.page-main__about {
-  @include wrapper;
-}
-
-.page-main__reviews {
-  @include wrapper;
-}
-
-.page-main__contacts {
-  @include wrapper;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -61px;
+    margin-bottom: -9px;
+  }
 }
 
 .page-main__description {

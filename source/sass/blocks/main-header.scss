@@ -1,7 +1,8 @@
 .main-header {
   min-height: 177px;
-  padding-top: 73px;
+  padding-top: 155px;
   position: relative;
+  width: 100%;
 
   background-color: $grey-241;
 
@@ -23,15 +24,20 @@
   text-align: center;
 
   margin: 0 auto 120px;
-  width: 260px;
+  max-width: 260px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .main-header__products {
   @include clear-list;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 50px;
-  }
 }

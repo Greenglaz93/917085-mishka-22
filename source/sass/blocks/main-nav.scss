@@ -1,9 +1,36 @@
 .main-nav {
-  margin: 0;
+  width: 320px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    display: grid;
+    grid-template-columns: 370px max-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    grid-template-columns: min-content 1fr auto;
+  }
+}
+
+.main-nav__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 30px 22px 116px;
+  border-bottom: 1px solid $grey-236;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
 }
 
 .main-nav__logo {
@@ -13,63 +40,43 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
     margin-right: 84px;
   }
 }
 
 .main-nav__toggle {
+  width: 21px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../img/menu-close.svg");
+  background-size: 21px 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: 0;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-nav__list {
-  @include clear-list;
-
   @media (min-width: $tablet-width) {
-    font-size: 15px;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    display: flex;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-
-    font-size: 17px;
-    line-height: 24px;
   }
 }
 
 .main-nav__user {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
   }
 }
 
 .main-nav__categories {
-  @include clear-list;
   display: none;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    font-size: 15px;
-    line-height: 24px;
-  }
 }

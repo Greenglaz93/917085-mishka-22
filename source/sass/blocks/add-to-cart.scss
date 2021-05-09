@@ -1,8 +1,21 @@
+.add-to-cart__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .add-to-cart__label {
+  display: block;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  width: 82px;
+  padding: 17px 0;
+
+  border: 2px solid $grey;
 }
 
 .add-to-cart__button.button {

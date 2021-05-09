@@ -9,21 +9,23 @@
 </head>
 <body class="page__body">
   <header class="page-header page__header">
-    <nav class="page-header__main-nav main-nav main-nav--closed">
-      <a class="main-nav__logo">
-        <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
-      </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <nav class="page-header__main-nav main-nav main-nav--opened">
+      <div class="main-nav__logo-wrapper">
+        <a class="main-nav__logo">
+          <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="catalog.html">
+          <a  class="site-list__link" href="catalog.html">
             Каталог товаров
           </a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">
+          <a  class="site-list__link" href="form.html">
             Вязание на заказ
           </a>
         </li>
@@ -44,12 +46,12 @@
       </div>
       <ul class="main-nav__categories categories-list">
         <li class="categories-list__item">
-          <a href="#">
+          <a class="categories-list__link" href="#">
             Новые поступления
           </a>
         </li>
         <li class="categories-list__item">
-          <a href="#">
+          <a class="categories-list__link" href="#">
             Распродажа
           </a>
         </li>
@@ -68,19 +70,23 @@
       </p>
       <ul class="main-header__products products">
         <li class="products__item products__item--interior">
-          <a class="products__link" href="#">
-            Предметы интерьера
-          </a>
+          <div class="products__item-inner">
+            <a class="products__link products__link--interior" href="#">
+              Предметы интерьера
+            </a>
+          </div>
         </li>
         <li class="products__item products__item--toys">
-          <a class="products__link" href="#">
-            Детские игрушки
-          </a>
+          <div class="products__item-inner">
+            <a class="products__link products__link--toys" href="#">
+              Детские игрушки
+            </a>
+          </div>
         </li>
       </ul>
     </header>
     <section class="page-main__top-offer top-offer">
-      <div class="content-wrapper">
+      <div class="top-offer__inner">
         <div class="top-offer__title-wrapper">
           <h2 class="top-offer__title">
             Товар недели
@@ -132,7 +138,7 @@
       </div>
     </section>
     <section class="page-main__about about-us">
-      <div class="content-wrapper">
+      <div class="about-us__inner">
         <h2 class="about-us__title">
           Коротко о нас:
         </h2>
@@ -140,17 +146,17 @@
           <li class="about-us__item about-us__item--eco">
             Экологически<br>чистые материалы
           </li>
-          <li class="about-us__item about-us__item--price">
-            Скандинавский стиль<br>по российской цене
-          </li>
-          <li class="about-us__item about-us__item--likes">
-            Увеличивает лайки<br>на фотографиях
-          </li>
           <li class="about-us__item about-us__item--love">
             Связано вручную<br>с любовью и умилением
           </li>
+          <li class="about-us__item about-us__item--price">
+            Скандинавский стиль<br>по российской цене
+          </li>
           <li class="about-us__item about-us__item--support">
             Поддержка отечественного производителя
+          </li>
+          <li class="about-us__item about-us__item--likes">
+            Увеличивает лайки<br>на фотографиях
           </li>
           <li class="about-us__item about-us__item--gift">
             Поставляется<br>в подарочной упаковке
@@ -159,7 +165,7 @@
       </div>
     </section>
     <section class="page-main__reviews reviews">
-      <div class="content-wrapper">
+      <div class="reviews__inner">
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item reviews__item--current">
@@ -172,9 +178,9 @@
                 <cite class="author__name">
                   Анастасия Красильникова
                 </cite>
-                <span class="author__login">
+                <p class="author__login">
                   @misssssiskras
-                </span>
+                </p>
               </figcaption>
             </figure>
           </li>
@@ -188,9 +194,9 @@
                 <cite class="author__name">
                   Екатерина Красильникова
                 </cite>
-                <span class="author__login">
+                <p class="author__login">
                   @misssssiskras
-                </span>
+                </p>
               </figcaption>
             </figure>
           </li>
@@ -204,9 +210,9 @@
                 <cite class="author__name">
                   Елена  Красильникова
                 </cite>
-                <span class="author__login">
+                <p class="author__login">
                   @misssssiskras
-                </span>
+                </p>
               </figcaption>
             </figure>
           </li>
@@ -223,7 +229,7 @@
       </div>
     </section>
     <section class="page-main__contacts contacts">
-      <div class="contacts__info-wrapper">
+      <div class="contacts__inner">
         <h2 class="contacts__title">
           Контакты
         </h2>
@@ -240,24 +246,20 @@
             адрес:
           </dt>
           <dd class="contacts__value">
-            г. Санкт-Петербург<br>
-            ул. Большая Конюшенная<br>
-            д. 19/8, офис 101
+            г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
           </dd>
         </dl>
       </div>
       <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614806831347!5m2!1sru!2sru"
       height="454" width="320" style="border: 0;" allowfullscreen="" loading="lazy">
       </iframe>
-      <div class="content-wrapper">
-        <a class="contacts__write button" href="#">
-          Напишите нам
-        </a>
-      </div>
+      <a class="contacts__write button" href="#">
+        Напишите нам
+      </a>
     </section>
   </main>
   <footer class="page__footer page-footer">
-    <div class="content-wrapper">
+    <div class="page-footer__inner">
       <a class="page-footer__logo">
         <img src="img/logo/logo-footer.svg" width="102" height="34" alt="Логотип магазина Мишка">
       </a>
@@ -301,7 +303,7 @@
     </div>
   </footer>
   <section class="page__modal page-modal page-modal--close">
-    <div class="page-modal__wrapper">
+    <div class="page-modal__inner">
       <h2 class="page-modal__title">
         Добавить в корзину
       </h2>
@@ -312,15 +314,15 @@
         <div class="add-to-cart__wrapper">
           <p>
             <label class="add-to-cart__label" for="size_s">S</label>
-            <input class="add-to-cart__radio" type="radio" name="size" id="size_s" value="s" checked>
+            <input class="add-to-cart__radio visually-hidden" type="radio" name="size" id="size_s" value="s" checked>
           </p>
           <p>
             <label class="add-to-cart__label" for="size_m">M</label>
-            <input class="add-to-cart__radio" type="radio" name="size" id="size_m" value="m">
+            <input class="add-to-cart__radio visually-hidden" type="radio" name="size" id="size_m" value="m">
           </p>
           <p>
             <label class="add-to-cart__label" for="size_l">L</label>
-            <input class="add-to-cart__radio" type="radio" name="size" id="size_l" value="l">
+            <input class="add-to-cart__radio visually-hidden" type="radio" name="size" id="size_l" value="l">
           </p>
         </div>
         <button class="add-to-cart__button button" type="submit">
@@ -329,5 +331,6 @@
       </form>
     </div>
   </section>
+  </div>
 </body>
 </html>

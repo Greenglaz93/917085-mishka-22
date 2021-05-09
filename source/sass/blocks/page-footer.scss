@@ -13,7 +13,9 @@
   }
 }
 
-.page-footer .content-wrapper {
+.page-footer__inner {
+  @include wrapper;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;

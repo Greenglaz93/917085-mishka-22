@@ -1,27 +1,10 @@
 .page-header {
-  background-color: $white;
-  border-bottom: 1px solid $grey-236;
-
-  @media (min-width: $tablet-width) {
-    max-width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1150px;
-  }
+  width: 100%;
+  z-index: 1;
 }
 
 .page-header__main-nav {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 346px;
-    column-gap: 17px;
-    grid-template-rows: 89px 72px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 405px 1fr 346px;
-  }
+  margin: 0 auto;
 }
 
 .page-header__delivery {
@@ -34,6 +17,7 @@
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
+    padding-right: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;

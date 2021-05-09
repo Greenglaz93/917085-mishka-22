@@ -4,12 +4,25 @@
   padding-top: 31px;
 }
 
+.about-us__inner {
+  @include content-wrapper;
+  margin: 0 auto;
+}
+
 .about-us__list {
   @include clear-list;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+.about-us__item:nth-child(even) {
+  @media (max-width: $mobile-width-only) {
+    order: 2;
   }
 }
 
@@ -28,6 +41,7 @@
   line-height: 20px;
   position: relative;
   padding-top: 60px;
+  padding-right: 34px;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -41,89 +55,79 @@
   &::before {
     @include pseudo;
     background-repeat: no-repeat;
+    left: 0;
+    top: 6px;
   }
 
   &--eco {
     @media (min-width: $tablet-width) {
-      order: 1;
+      // order: 1;
     }
 
     &::before {
       width: 33px;
       height: 38px;
-      background-image: url("../img/logo/eco.svg");
-      left: 0;
-      top: 6px;
+      background-image: url("../img/eco.svg");
     }
   }
 
   &--price {
     @media (min-width: $tablet-width) {
-      order: 3;
+      // order: 3;
     }
 
     &::before {
       width: 47px;
       height: 27px;
-      background-image: url("../img/logo/price.svg");
-      left: 0;
-      top: 6px;
+      background-image: url("../img/price.svg");
     }
   }
 
   &--likes {
     @media (min-width: $tablet-width) {
-      order: 5;
+      // order: 5;
     }
 
     &::before {
       width: 34px;
       height: 27px;
-      background-image: url("../img/logo/likes.svg");
-      left: 0;
-      top: 6px;
+      background-image: url("../img/likes.svg");
     }
   }
 
   &--love {
     @media (min-width: $tablet-width) {
-      order: 2;
+      // order: 2;
     }
 
     &::before {
       width: 35px;
       height: 34px;
-      background-image: url("../img/logo/love.svg");
-      left: 0;
-      top: 6px;
+      background-image: url("../img/love.svg");
     }
   }
 
   &--support {
     @media (min-width: $tablet-width) {
-      order: 4;
+      // order: 4;
     }
 
     &::before {
       width: 55px;
       height: 23px;
-      background-image: url("../img/logo/support.svg");
-      left: 0;
-      top: 6px;
+      background-image: url("../img/support.svg");
     }
   }
 
   &--gift {
     @media (min-width: $tablet-width) {
-      order: 6;
+      // order: 6;
     }
 
     &::before {
       width: 33px;
       height: 32px;
-      background-image: url("../img/logo/gift.svg");
-      left: 0;
-      top: 6px;
+      background-image: url("../img/gift.svg");
     }
   }
 }
