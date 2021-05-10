@@ -1,8 +1,6 @@
 .top-offer {
   padding-top: 31px;
 
-  @include wrapper;
-
   @media (min-width: $tablet-width) {
     padding: 40px 0 52px;
   }

@@ -1,6 +1,7 @@
 .page-modal {
   display: block;
-  width: 100%;
+
+  @include wrapper;
 }
 
 .page-modal__inner {

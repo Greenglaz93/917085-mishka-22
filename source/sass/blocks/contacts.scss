@@ -1,7 +1,5 @@
 .contacts {
   padding: 38px 0;
-  margin: 0 auto;
-  max-width: 1050px;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -65,16 +63,18 @@
   margin: 0;
   margin-bottom: 42px;
   display: grid;
-  grid-template-columns: 76px 184px;
-  row-gap: 33px;
+  grid-template-columns: 44px 184px;
+  gap: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    grid-template-columns: 80px 1fr 80px 1fr;
+    gap: 25px;
+    grid-template-columns: 54px 231px 54px 250px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 76px 1fr;
+    grid-template-columns: 55px 1fr;
+    gap: 23px;
   }
 }
 
