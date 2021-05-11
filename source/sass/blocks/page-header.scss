@@ -1,4 +1,32 @@
 .page-header {
-  background-color: $white;
-  border-bottom: 1px solid $grey-236;
+  z-index: 1;
+}
+
+.page-header__main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__delivery {
+  font-size: 15px;
+  font-weight: 400;
+  color: $grey;
+  line-height: 24px;
+
+  display: none;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
 }

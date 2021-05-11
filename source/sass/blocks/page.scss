@@ -4,18 +4,16 @@
 
 .page__body {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   text-transform: none;
   color: $grey;
-  background-color: $white;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-}
-
-.page__footer {
-  margin-top: 39px;
+  position: relative;
 }

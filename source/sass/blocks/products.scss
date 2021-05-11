@@ -1,12 +1,13 @@
-.products__list {
-  @include clear-list;
+.products {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .products__item {
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $white;
+  position: relative;
 
   &--interior {
     background-color: $primary-400;
@@ -14,5 +15,54 @@
 
   &--toys {
     background-color: $primary-500;
+  }
+}
+
+.products__item-inner {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+}
+
+
+.products__link {
+  display: block;
+  position: relative;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white;
+
+  padding: 24px 160px 31px 30px;
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 350px 31px 30px;
+  }
+
+  &::after {
+    @include pseudo;
+    width: 62px;
+    height: 62px;
+    right: 16px;
+    top: 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--interior::after {
+    background-image: url("../img/interior.svg");
+  }
+
+  &--toys::after {
+    background-image: url("../img/toy.svg");
   }
 }

@@ -1,0 +1,152 @@
+.top-offer {
+  padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 0 73px;
+  }
+}
+
+.top-offer__inner {
+  @include content-wrapper;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top-offer__title-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+    margin-left: -140px;
+
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.top-offer__title {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $primary-400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+
+    text-align: center;
+    line-height: 17px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 43px;
+  }
+}
+
+.top-offer__name {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.top-offer__description-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 292px 334px;
+    column-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 292px;
+  }
+}
+
+.top-offer__description {
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.top-offer__details {
+  margin-bottom: 28px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
+}
+
+.top-offer__image {
+  width: 260px;
+  height: 315px;
+  background-color: $grey-236;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+
+    width: 334px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+
+    position: absolute;
+    z-index: -1;
+    right: 50px;
+    top: -60px;
+  }
+}
+
+.top-offer__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  margin: 24px auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.top-offer__order {
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+    height: 52px;
+    padding: 16px 86px;
+  }
+}

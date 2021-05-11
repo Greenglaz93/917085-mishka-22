@@ -1,10 +1,29 @@
 .page-modal {
   display: block;
+
+  @include wrapper;
+}
+
+.page-modal__inner {
+  @include content-wrapper;
+  margin: 0 auto;
+  padding-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 466px;
+  }
 }
 
 .page-modal__title {
   font-size: 25px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  margin: 14px auto;
+}
+
+.page-modal__text {
+  text-align: center;
 }

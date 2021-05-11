@@ -1,0 +1,21 @@
+.categories-list {
+  @include clear-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 14px;
+  }
+}
+
+.categories-list__link {
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 20px 21px 17px 36px;
+  }
+}
