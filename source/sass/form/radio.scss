@@ -1,0 +1,44 @@
+.radio {
+  position: relative;
+}
+
+.radio__input {
+  position: absolute;
+  margin: 0;
+  width: 42px;
+  height: 42px;
+  opacity: 0;
+
+  &:checked + .radio__name::after {
+    @include pseudo;
+
+    top: 19px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    background-color: $primary-550;
+    border-radius: 50%;
+  }
+}
+
+.radio__name {
+  display: block;
+  position: relative;
+  padding: 14px 0 10px 60px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black;
+
+  &::before {
+    @include pseudo;
+
+    left: 0;
+    top: 7px;
+
+    width: 42px;
+    height: 42px;
+    border: 2px solid $grey;
+    border-radius: 50%;
+  }
+}

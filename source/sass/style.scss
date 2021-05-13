@@ -28,14 +28,18 @@
 @import "blocks/add-to-cart.scss";
 @import "blocks/button.scss";
 @import "blocks/toggles.scss";
-@import "blocks/order-form.scss";
-@import "blocks/form-group.scss";
-@import "blocks/checkbox.scss";
-@import "blocks/radio.scss";
-@import "blocks/field.scss";
 @import "blocks/catalog.scss";
 @import "blocks/description.scss";
 @import "blocks/making.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user.scss";
 @import "blocks/categories.scss";
+
+// Form.html
+
+@import "form/page-form.scss";
+@import "form/order-form.scss";
+@import "form/form-group.scss";
+@import "form/radio.scss";
+@import "form/checkbox.scss";
+@import "form/field.scss";
