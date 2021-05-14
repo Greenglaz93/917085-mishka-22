@@ -9,6 +9,11 @@
   height: 38px;
   opacity: 0;
 
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+
   &:checked + .checkbox__name::after {
     @include pseudo;
 

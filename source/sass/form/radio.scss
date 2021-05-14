@@ -9,36 +9,60 @@
   height: 42px;
   opacity: 0;
 
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+
   &:checked + .radio__name::after {
     @include pseudo;
 
-    top: 19px;
-    left: 12px;
-    width: 18px;
-    height: 18px;
+    top: 13px;
+    left: 13px;
+    width: 16px;
+    height: 16px;
     background-color: $primary-550;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 16px;
+      left: 16px;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
 .radio__name {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
-  padding: 14px 0 10px 60px;
+  padding-left: 61px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: $black;
+  min-height: 42px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+    padding-left: 78px;
+  }
 
   &::before {
     @include pseudo;
 
     left: 0;
-    top: 7px;
+    top: 0;
 
     width: 42px;
     height: 42px;
     border: 2px solid $grey;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
