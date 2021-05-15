@@ -3,6 +3,7 @@
   line-height: 24px;
   font-weight: 700;
   color: $black;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -19,12 +20,14 @@
 .main-nav__logo-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 22px 30px 22px 116px;
+  justify-content: center;
+  padding: 22px;
   border-bottom: 1px solid $grey-236;
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+    justify-content: flex-start;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +55,8 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   border: 0;
+  position: absolute;
+  right: 30px;
 
   @media (min-width: $tablet-width) {
     display: none;

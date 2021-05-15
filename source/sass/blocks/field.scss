@@ -1,8 +1,22 @@
+.field {
+  &--fullname {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+    }
+  }
+}
+
 .field__name {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+    padding: 18px 0;
+  }
 }
 
 .field__input {
@@ -14,14 +28,17 @@
   font-family: inherit;
   font-size: 17px;
   line-height: 18px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px;
+    width: 100%;
+  }
 
   &--textarea {
     border: 2px solid $black;
     padding: 17px;
     height: 142px;
+    margin: 10px 0;
   }
-}
-
-.field__input::placeholder {
-  color: transparentize($color: $black, $amount: 0.3);
 }

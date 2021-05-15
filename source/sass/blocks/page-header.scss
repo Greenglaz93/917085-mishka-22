@@ -1,9 +1,12 @@
 .page-header {
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $white 88px, $black-10 88px, $black-10 89px, transparent 89px);
+  }
 }
 
 .page-header__main-nav {
-  width: 320px;
   margin: 0 auto;
 }
 

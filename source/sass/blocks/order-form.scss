@@ -2,16 +2,49 @@
   padding-bottom: 55px;
 }
 
-.order-form__group {
-  border: 0;
+.order-form__group-wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-241;
+  }
 }
 
-.order-form__note {
+.order-form__group {
+  border: 0;
+
+  @include wrapper;
+}
+
+.order-form__remark {
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .order-form__button {
   font-size: 17px;
   line-height: 16px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.order-form__notes {
+  @include wrapper;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
 }
