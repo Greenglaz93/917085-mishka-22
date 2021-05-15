@@ -1,9 +1,14 @@
 .description {
-  padding: 24px 32px 26px 28px;
+  padding: 28px;
 }
 
 .description__details {
   border-bottom: 1px solid $grey-236;
+  padding-bottom: 15px;
+}
+
+.description__link {
+  display: block;
 }
 
 .description__title {
@@ -16,6 +21,12 @@
 
 .description__options {
   font-size: 13px;
+}
+
+.description__order {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .description__price {

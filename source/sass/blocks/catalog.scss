@@ -7,7 +7,7 @@
 }
 
 .catalog__item {
-  border: 1px solid $grey-236;
+  @include wrapper;
 }
 
 .catalog__item:not(:last-child) {
