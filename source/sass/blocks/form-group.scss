@@ -15,6 +15,10 @@
 }
 
 .form-group__heading {
+  width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
   padding: 18px 0;
   font-size: 17px;
   line-height: 16px;
@@ -30,22 +34,10 @@
 
   &::after {
     @media (max-width: $mobile-width-only) {
-      @include pseudo;
-
-      width: 200px;
-      height: 1px;
-      background-color: $primary-550;
-      right: 0;
-      top: 26px;
+      content: "";
+      flex-grow: 1;
+      border-bottom: 1px solid $primary-550;
     }
-  }
-}
-
-.form-group__heading--email::after {
-  @media (max-width: $mobile-width-only) {
-    width: 182px;
-    height: 1px;
-    right: 0;
   }
 }
 
