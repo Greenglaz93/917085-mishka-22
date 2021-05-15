@@ -7,6 +7,11 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 32px 16px 28px;
+    flex-grow: 1;
+  }
 }
 
 .description__details {
@@ -23,6 +28,10 @@
   font-weight: 700;
   color: $black;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .description__options {
