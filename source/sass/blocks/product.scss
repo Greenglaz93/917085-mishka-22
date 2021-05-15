@@ -1,18 +1,37 @@
 .product {
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .product__link {
   display: block;
   font-size: 0;
   line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+  }
 }
 
 .product__img {
   width: 260px;
   height: 195px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
 }
 
 .product__description {
   border: 1px solid $grey-236;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+  }
 }

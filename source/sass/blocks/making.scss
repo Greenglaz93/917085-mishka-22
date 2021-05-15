@@ -1,21 +1,36 @@
 .making {
   padding: 10px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .making__title-wrapper {
   border: 1px solid $grey-236;
+  border-bottom: none;
+
+  @media (min-width: $tablet-width)  {
+    order: 2;
+  }
 }
 
 .making__title {
   display: flex;
   align-items: center;
-  padding-left: 34px;
-  margin-top: 22px;
-  margin-bottom: 27px;
+  padding: 22px 0 27px 34px;
+  margin: 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding: 41px 33px 15px 43px;
+    font-size: 20px;
+  }
 
   &::before {
     content: "";
@@ -31,6 +46,10 @@
 .making__video {
   position: relative;
   line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .making__video-button {
@@ -43,23 +62,47 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 101px 77px;
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+    height: 78px;
+    top: 189px;
+    left: 283px;
+  }
 }
 
 .making__poster {
   width: 262px;
   height: 150px;
   object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
 }
 
 .making__inner {
   padding: 33px;
   border: 1px solid $grey-236;
+  border-top: none;
+  margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    padding: 10px 42px 46px 42px;
+  }
 }
 
 .making__description {
   font-size: 13px;
   line-height: 24px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+    padding-right: 90px;
+  }
 }
 
 .making__order {
