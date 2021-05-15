@@ -1,68 +1,57 @@
 .form-group {
   padding: 0 30px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 20px 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 225px 20px 110px;
-  }
-
-  &--color .form-group__item {
-    @media (min-width: $tablet-width) {
-      width: 250px;
-      padding-right: 30px;
-      padding-bottom: 20px;
-    }
-  }
-
-  &--colors {
-    @media (min-width: $desktop-width) {
-      padding: 20px 175 px 20px 110px;
-    }
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
 .form-group__heading {
-  position: relative;
-  padding: 24px 0;
+  padding: 18px 0;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: $primary-550;
 
-  @media (max-width: $mobile-width-only) {
-    &::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
       @include pseudo;
 
       width: 200px;
       height: 1px;
       background-color: $primary-550;
-      left: 60px;
-      top: 32px;
-    }
-
-    &--email::after {
-      width: 180px;
-      left: 80px;
+      right: 0;
+      top: 26px;
     }
   }
+}
 
+.form-group__heading--email::after {
+  @media (max-width: $mobile-width-only) {
+    width: 182px;
+    height: 1px;
+    right: 0;
+  }
+}
+
+.form-group__heading--email {
   @media (min-width: $tablet-width) {
-    position: absolute;
-  }
-
-  &--contacts {
-    @media (min-width: $tablet-width) {
-      left: 50px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 110px;
-    }
+    top: 125px;
   }
 }
 
@@ -70,34 +59,45 @@
   @include clear-list;
 
   @media (min-width: $tablet-width) {
-    padding-left: 168px;
+    grid-column: 2 / -1;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 115px;
+    grid-column: 2 / -2;
   }
 
   &--colors {
+    display: grid;
+    row-gap: 23px;
+
     @media (min-width: $tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
-      width: 668px;
-      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 865px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-end: -1;
     }
   }
 }
 
 .form-group__item {
   margin-bottom: 23px;
+}
 
-  &--color {
-    @media (min-width: $tablet-width) {
-      padding-right: 25px;
-      width: 250px;
-    }
+.form-group__add {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -2;
   }
 }
+

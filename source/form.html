@@ -93,37 +93,37 @@
           <fieldset class="order-form__group form-group form-group--colors">
             <legend class="form-group__heading">Цвет</legend>
             <ul class="form-group__list form-group__list--colors">
-              <li class="form-group__item form-group__item--color">
+              <li>
                 <label class="form-group__field checkbox">
                   <input class="checkbox__input" type="checkbox" name="color" value="white" checked>
                   <span class="checkbox__name">Белый</span>
                 </label>
               </li>
-              <li class="form-group__item form-group__item--color">
+              <li>
                 <label class="form-group__field checkbox">
                   <input class="checkbox__input" type="checkbox" name="color" value="grey" checked>
                   <span class="checkbox__name">Серый</span>
                 </label>
               </li>
-              <li class="form-group__item form-group__item--color">
+              <li>
                 <label class="form-group__field checkbox">
                   <input class="checkbox__input" type="checkbox" name="color" value="mint">
                   <span class="checkbox__name">"Тиффани"</span>
                   </label>
               </li>
-              <li class="form-group__item form-group__item--color">
+              <li>
                 <label class="form-group__field checkbox">
                   <input class="checkbox__input" type="checkbox" name="color" value="black">
                   <span class="checkbox__name">Чёрный</span>
                 </label>
               </li>
-              <li class="form-group__item form-group__item--color">
+              <li>
                 <label class="form-group__field checkbox">
                   <input class="checkbox__input" type="checkbox" name="color" value="pink">
                   <span class="checkbox__name">Розовый</span>
                 </label>
               </li>
-              <li class="form-group__item form-group__item--color">
+              <li>
                 <label class="form-group__field checkbox">
                   <input class="checkbox__input" type="checkbox" name="color" value="orange">
                   <span class="checkbox__name">Оранжевый</span>
@@ -160,26 +160,23 @@
             <legend class="visually-hidden">Контактная информация</legend>
             <ul class="form-group__list">
               <li class="form-group__item">
-                <span class="form-group__heading form-group__heading--contacts">Тел</span>
                 <label class="form-group__field field">
-                  <span class="visually-hidden">Контактный телефон</span>
+                  <span class="form-group__heading form-group__heading--tel">Тел</span>
                   <input class="field__input field__input--tel" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
                 </label>
               </li>
               <li class="form-group__item">
-                <span class="form-group__heading form-group__heading--contacts">E-mail</span>
                 <label class="form-group__field field">
-                  <span class="visually-hidden">Контактный e-mail</span>
+                  <span class="form-group__heading form-group__heading--email">E-mail</span>
                   <input class="field__input field__input--email" type="email" name="email" placeholder="Ваш Email*" required>
                 </label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div class="order-form__group form-group form-group--add">
-          <span class="form-group__heading">Доп</span>
-          <label class="form-group__field field">
-            <span class="visually-hidden">Дополнительная информация</span>
+        <div class="order-form__group form-group">
+          <label class="form-group__field form-group__add field">
+            <span class="form-group__heading">Доп</span>
             <textarea class="field__input field__input--textarea" name="text" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </div>

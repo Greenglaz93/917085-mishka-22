@@ -1,9 +1,17 @@
 .checkbox {
   position: relative;
+  display: block;
+  padding-left: 61px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 78px;
+  }
 }
 
 .checkbox__input {
   position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
   width: 38px;
   height: 38px;
@@ -17,7 +25,7 @@
   &:checked + .checkbox__name::after {
     @include pseudo;
 
-    top: 13px;
+    top: 7px;
     left: 7px;
     width: 23px;
     height: 23px;
@@ -26,25 +34,43 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 23px 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      left: 10px;
+      width: 32px;
+      height: 32px;
+      background-size: 32px 22px;
+    }
   }
 }
 
 .checkbox__name {
-  position: relative;
+  display: flex;
+  align-items: center;
   font-size: 17px;
-  padding: 14px 0 10px 60px;
   line-height: 18px;
   font-weight: 700;
   color: $black;
+  min-height: 38px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+  }
 
   &::before {
     @include pseudo;
 
     left: 0;
-    top: 7px;
+    top: 0;
 
     width: 38px;
     height: 38px;
     border: 2px solid $grey;
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+    }
   }
 }

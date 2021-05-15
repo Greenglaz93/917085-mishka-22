@@ -39,15 +39,6 @@
     border: 2px solid $black;
     padding: 17px;
     height: 142px;
-
-    @media (min-width: $tablet-width) {
-      width: 500px;
-      margin-left: 168px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 700px;
-      margin-left: 115px;
-    }
+    margin: 10px 0;
   }
 }

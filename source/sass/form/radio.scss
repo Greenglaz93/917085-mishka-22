@@ -1,9 +1,17 @@
 .radio {
   position: relative;
+  display: block;
+  padding-left: 61px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 78px;
+  }
 }
 
 .radio__input {
   position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
   width: 42px;
   height: 42px;
@@ -36,8 +44,6 @@
 .radio__name {
   display: flex;
   align-items: center;
-  position: relative;
-  padding-left: 61px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -46,7 +52,6 @@
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
-    padding-left: 78px;
   }
 
   &::before {
