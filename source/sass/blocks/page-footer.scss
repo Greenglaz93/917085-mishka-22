@@ -7,9 +7,25 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__logo-link {
+  font-size: 0;
+  line-height: 0;
+
   @media (max-width: $mobile-width-only) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    .page-footer__logo path {
+      fill: $primary-link-hover;
+      transition: 0.3s;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.3s;
   }
 }
 
