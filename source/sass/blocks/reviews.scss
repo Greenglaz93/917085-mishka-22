@@ -10,13 +10,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 83px;
+    padding: 83px 0 67px 0;
   }
 }
 
 .reviews__inner {
   @include content-wrapper;
   margin: 0 auto;
+  padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;

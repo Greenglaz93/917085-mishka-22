@@ -1,12 +1,20 @@
 .top-offer {
   padding-top: 31px;
 
+  background-image: url("../img/bg/zigzag-line-desktop.svg");
+  background-repeat: repeat-x;
+  background-position: -1px bottom;
+  background-size: auto 6px;
+
   @media (min-width: $tablet-width) {
     padding: 40px 0 52px;
+    background-size: auto 17px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1050px;
     padding: 115px 0 73px;
+    background-size: 1050px 23px;
   }
 }
 
@@ -14,6 +22,11 @@
   @include content-wrapper;
   margin: 0 auto;
   position: relative;
+  padding-bottom: 41px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 175px;
+  }
 }
 
 .top-offer__title-wrapper {
@@ -123,7 +136,7 @@
 
     position: absolute;
     z-index: -1;
-    right: 50px;
+    right: 0;
     top: -60px;
   }
 }

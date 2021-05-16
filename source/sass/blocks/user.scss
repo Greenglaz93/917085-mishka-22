@@ -40,10 +40,12 @@
   &:hover,
   &:focus {
     .user__title {
+      transition: 0.3s;
       opacity: 0.6;
     }
 
     .user__icon path {
+      transition: 0.3s;
       fill: $primary-400;
       fill-opacity: 1;
     }

@@ -44,8 +44,14 @@
 
   padding: 24px 160px 31px 30px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 26px 167px 34px 36px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 24px 350px 31px 30px;
+    padding: 26px 350px 34px 37px;
   }
 
   &::after {
@@ -56,6 +62,7 @@
     top: 23px;
     background-repeat: no-repeat;
     background-position: center center;
+    opacity: 0.5;
   }
 
   &--interior::after {
