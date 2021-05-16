@@ -58,4 +58,13 @@
   @media (min-width: $desktop-width) {
     padding: 31px 26px 33px 35px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
