@@ -1,15 +1,29 @@
 .catalog {
   padding: 30px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 111px 50px 27px 50px;
+  }
 }
 
 .catalog__list {
   @include clear-list;
-}
 
-.catalog__item {
-  border: 1px solid $grey-236;
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 51px;
+  }
 }
 
 .catalog__item:not(:last-child) {
-  margin-bottom: 30px;
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__item {
+  @include wrapper;
 }

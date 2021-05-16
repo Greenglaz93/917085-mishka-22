@@ -1,9 +1,25 @@
 .description {
-  padding: 24px 32px 26px 28px;
+  padding: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 32px 16px 28px;
+    flex-grow: 1;
+  }
 }
 
 .description__details {
-  border-bottom: 1px solid $grey-236;
+  margin-bottom: 15px;
+}
+
+.description__link {
+  display: block;
 }
 
 .description__title {
@@ -12,10 +28,21 @@
   font-weight: 700;
   color: $black;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .description__options {
   font-size: 13px;
+}
+
+.description__order {
+  border-top: 1px solid $grey-236;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .description__price {
