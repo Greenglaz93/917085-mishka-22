@@ -8,14 +8,6 @@
 
 .products__item {
   position: relative;
-
-  &--interior {
-    background-color: $primary-400;
-  }
-
-  &--toys {
-    background-color: $primary-500;
-  }
 }
 
 .products__item-inner {
@@ -32,7 +24,6 @@
   }
 }
 
-
 .products__link {
   display: block;
   position: relative;
@@ -47,11 +38,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 26px 167px 34px 36px;
+    padding: 26px 167px 39px 36px;
+    transition: all 0.3s ease-in-out;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 26px 350px 34px 37px;
+    padding: 26px 350px 39px 37px;
   }
 
   &::after {
@@ -65,11 +57,54 @@
     opacity: 0.5;
   }
 
-  &--interior::after {
-    background-image: url("../img/interior.svg");
+  &--interior {
+    background-color: $primary-400;
+
+    &::after {
+      background-image: url("../img/interior.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $primary-575;
+      }
+    }
   }
 
-  &--toys::after {
-    background-image: url("../img/toy.svg");
+  &--toys {
+    background-color: $primary-500;
+
+    &::after {
+      background-image: url("../img/toy.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $primary-link-hover;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $desktop-width) {
+      transform: translateY(-5px);
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &:active {
+    @media (min-width: $desktop-width) {
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 }
