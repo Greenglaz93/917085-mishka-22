@@ -1,7 +1,8 @@
 .contacts {
-  padding: 38px 0;
+  padding: 0 0 38px 0;
 
   @media (min-width: $desktop-width) {
+    padding: 94px 0;
     display: grid;
     grid-template-columns: 1fr 527px;
     column-gap: 50px;
@@ -10,9 +11,16 @@
 
 .contacts__inner {
   @include content-wrapper;
-  margin: 0 auto;
+  @include wrapper;
+  padding-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+    background-size: auto 17px;
+  }
 
   @media (min-width: $desktop-width) {
+    background: none;
     width: 300px;
     padding: 0 0 0 175px;
     margin: 0;
@@ -88,7 +96,18 @@
 }
 
 .contacts__email {
-  border-bottom: 1px solid $primary-400;
+  border-bottom: 1px solid $primary-550;
+
+  &:hover,
+  &:focus {
+    color: $primary-link-hover;
+    transition: 0.3s;
+    border-bottom: 1px solid $primary-link-hover;
+  }
+
+  &:active {
+    border-bottom: 1px solid rgba($primary-link-hover, 0.1);
+  }
 }
 
 .contacts__map {

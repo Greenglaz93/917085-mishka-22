@@ -6,6 +6,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover,
+  &:focus {
+    .copyright__logo path {
+      fill: $primary-link-hover;
+      transition: 0.3s;
+    }
+  }
+
+  &:active {
+    .copyright__logo {
+      opacity: 0.3;
+    }
+  }
 }
 
 .copyright__title {
@@ -13,6 +27,5 @@
   line-height: 18px;
   font-weight: 700;
   color: $black;
-
   margin-right: 39px;
 }

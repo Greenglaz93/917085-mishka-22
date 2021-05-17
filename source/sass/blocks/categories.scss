@@ -18,4 +18,14 @@
     display: block;
     padding: 20px 21px 17px 36px;
   }
+
+  &:hover,
+  &:focus {
+    transition: 0.3s;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

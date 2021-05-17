@@ -24,4 +24,16 @@
 
   min-width: 35px;
   min-height: 35px;
+
+  &:hover,
+  &:focus {
+    .social__icon path {
+      fill: $primary-link-hover;
+      transition: 0.3s;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

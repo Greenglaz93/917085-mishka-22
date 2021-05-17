@@ -1,12 +1,35 @@
 .top-offer {
-  padding-top: 31px;
+  padding: 31px 0 17px 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 6px;
+    background-image: url("../img/bg/zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 320px 6px;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 52px;
+    padding: 40px 0;
+
+    &::after {
+      width: 768px;
+      height: 17px;
+      background-size: 768px 17px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 0 73px;
+    width: 1050px;
+    padding-top: 115px;
+
+    &::after {
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px 23px;
+    }
   }
 }
 
@@ -14,6 +37,15 @@
   @include content-wrapper;
   margin: 0 auto;
   position: relative;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 73px 175px;
+  }
 }
 
 .top-offer__title-wrapper {
@@ -123,7 +155,7 @@
 
     position: absolute;
     z-index: -1;
-    right: 50px;
+    right: 0;
     top: -60px;
   }
 }
