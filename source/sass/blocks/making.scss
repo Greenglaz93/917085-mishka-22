@@ -11,6 +11,28 @@
     grid-template-columns: 683px 1fr;
     grid-template-rows: 172px max-content;
     grid-template-areas: "video title" "video inner";
+    position: relative;
+
+    &::after {
+      @include pseudo;
+      top: 10px;
+      left: 50px;
+      width: 1049px;
+      height: 455px;
+      z-index: -1;
+    }
+
+    &:hover {
+      &::after {
+        box-shadow: 0 6px 10px 0 rgba($color: $black, $alpha: 0.1);
+      }
+    }
+
+    &:active {
+      &::after {
+        box-shadow: 0 3px 5px 0 rgba($color: $black, $alpha: 0.1);
+      }
+    }
   }
 }
 
@@ -75,12 +97,25 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 101px 77px;
+  transition: transform 0.1s ease-in;
 
   @media (min-width: $tablet-width) {
     width: 102px;
     height: 78px;
     top: 189px;
     left: 283px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
   }
 }
 

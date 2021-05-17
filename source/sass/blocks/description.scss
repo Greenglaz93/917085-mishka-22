@@ -32,6 +32,17 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .description__options {
@@ -49,4 +60,21 @@
   line-height: 24px;
   font-weight: 700;
   color: $black;
+}
+
+.description__cart {
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      path {
+        fill: $primary-400;
+      }
+    }
+
+    &:active {
+      path {
+        opacity: 0.3;
+      }
+    }
+  }
 }
