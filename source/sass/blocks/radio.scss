@@ -39,6 +39,12 @@
       height: 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &:focus + .radio__name::before {
+      border-color: $primary-550;
+    }
+  }
 }
 
 .radio__name {
@@ -52,6 +58,20 @@
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      &::before {
+        border-color: $primary-550;
+      }
+    }
+
+    &:active {
+      &::before {
+        border-color: rgba($color: $black, $alpha: 0.3);
+      }
+    }
   }
 
   &::before {
