@@ -10,10 +10,6 @@
     display: grid;
     grid-template-columns: 1fr 527px;
     column-gap: 50px;
-    background-image: url("../img/bg/zigzag-line-desktop.svg");
-    background-repeat: repeat-x;
-    background-position: left top;
-    background-size: auto 23px;
   }
 }
 
@@ -21,11 +17,6 @@
   @include content-wrapper;
   @include wrapper;
   padding-top: 38px;
-
-  background-image: url("../img/bg/zigzag-line-desktop.svg");
-  background-repeat: repeat-x;
-  background-position: -1px top;
-  background-size: auto 6px;
 
   @media (min-width: $tablet-width) {
     padding-top: 68px;
