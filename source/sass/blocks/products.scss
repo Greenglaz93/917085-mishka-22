@@ -39,11 +39,26 @@
     font-size: 20px;
     line-height: 30px;
     padding: 26px 167px 39px 36px;
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
 
   @media (min-width: $desktop-width) {
     padding: 26px 350px 39px 37px;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 
   &::after {
@@ -85,25 +100,6 @@
       &:focus,
       &:active {
         background-color: $primary-link-hover;
-      }
-    }
-  }
-
-  &:hover,
-  &:focus {
-    @media (min-width: $desktop-width) {
-      transform: translateY(-5px);
-
-      &::after {
-        opacity: 0.7;
-      }
-    }
-  }
-
-  &:active {
-    @media (min-width: $desktop-width) {
-      &::after {
-        opacity: 0.3;
       }
     }
   }
