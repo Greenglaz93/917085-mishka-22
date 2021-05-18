@@ -40,10 +40,6 @@
     line-height: 30px;
     padding: 26px 167px 39px 36px;
     transition: transform 0.3s ease-in-out;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 26px 350px 39px 37px;
 
     &:hover,
     &:focus {
@@ -59,6 +55,10 @@
         opacity: 0.3;
       }
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 350px 39px 37px;
   }
 
   &::after {

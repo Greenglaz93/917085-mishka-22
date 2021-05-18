@@ -1,6 +1,15 @@
 .product {
   padding: 0 30px;
 
+  &:hover > .product__description,
+  &:focus-within > .product__description {
+    box-shadow: 0 6px 10px 0 rgba($color: $black, $alpha: 0.1);
+  }
+
+  &:active > .product__description {
+    box-shadow: 0 3px 5px 0 rgba($color: $black, $alpha: 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0 50px;
     display: grid;
@@ -11,14 +20,6 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-
-    &:hover > .product__description {
-      box-shadow: 0 6px 10px 0 rgba($color: $black, $alpha: 0.1);
-    }
-
-    &:active > .product__description {
-      box-shadow: 0 3px 5px 0 rgba($color: $black, $alpha: 0.1);
-    }
   }
 }
 
