@@ -38,10 +38,24 @@
   }
 
   &--index {
-    background-image: url("../img/bg/hero-mobile@2x.jpg");
+    background-image: url("../img/bg/hero-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: 574px auto;
     padding-bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/hero-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg/hero-tablet.jpg");
+      background-size: 1150px auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg/hero-tablet@2x.jpg");
+      }
+    }
   }
 }
 

@@ -1,9 +1,6 @@
 .reviews {
   padding-top: 20px;
   background-color: $white;
-  background-image: url("../img/bg/review.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
 
   &::after {
     content: "";
@@ -15,12 +12,16 @@
     background-size: 320px 6px;
   }
 
-  @media (max-width: $mobile-width-only) {
-    background-image: none;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 83px 0 10px 0;
+    background-image: url("../img/bg/review.jpg");
+    background-size: 350px 457px;
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/review@2x.jpg");
+    }
 
     &::after {
       width: 768px;
