@@ -20,6 +20,15 @@
 
 .description__link {
   display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .description__title {
@@ -49,4 +58,28 @@
   line-height: 24px;
   font-weight: 700;
   color: $black;
+}
+
+.description__cart {
+  path {
+    fill: rgba($color: $black, $alpha: 0.2);
+  }
+}
+
+.description__order-button {
+  &:hover,
+  &:focus {
+    .description__cart path {
+      opacity: 1;
+      fill: $primary-400;
+    }
+  }
+}
+
+.description__order-button:active {
+  .description__cart {
+    path {
+      opacity: 0.3;
+    }
+  }
 }
