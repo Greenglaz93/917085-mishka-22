@@ -13,6 +13,7 @@
   @include content-wrapper;
   @include wrapper;
   padding-top: 38px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     padding-top: 68px;
@@ -72,7 +73,7 @@
   margin-bottom: 42px;
   display: grid;
   grid-template-columns: 44px 184px;
-  gap: 33px;
+  gap: 32px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -96,6 +97,7 @@
 }
 
 .contacts__email {
+  display: inline-block;
   border-bottom: 1px solid $primary-550;
 
   &:hover,
@@ -112,7 +114,7 @@
 
 .contacts__map {
   width: 100%;
-  margin: 0 auto 42px;
+  margin: 0 auto 33px;
 
   @media (min-width: $tablet-width) {
     height: 457px;

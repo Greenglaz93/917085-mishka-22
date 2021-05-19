@@ -1,13 +1,17 @@
 .top-offer {
-  padding: 31px 0 17px 0;
+  padding: 33px 0 5px 0;
+  position: relative;
 
   &::after {
     content: "";
     display: block;
-    width: 320px;
+    width: 100%;
     height: 6px;
+    position: absolute;
+    bottom: 0;
     background-image: url("../img/bg/zigzag-line.svg");
     background-repeat: repeat-x;
+    background-position: 7px;
     background-size: 320px 6px;
   }
 
@@ -70,7 +74,7 @@
 
 .top-offer__title {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 700;
   color: $primary-400;
   text-transform: uppercase;
@@ -122,6 +126,7 @@
 
 .top-offer__description {
   line-height: 24px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -129,27 +134,25 @@
 }
 
 .top-offer__details {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 90px;
   }
 }
 
-.top-offer__image {
+.top-offer__image img {
   width: 260px;
   height: 315px;
   background-color: $grey-236;
+}
 
+.top-offer__image {
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
     width: 334px;
     height: 404px;
-
-    & img {
-      width: 100%;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -169,7 +172,8 @@
   font-weight: 700;
   text-align: center;
 
-  margin: 24px auto;
+  margin-top: 18px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;

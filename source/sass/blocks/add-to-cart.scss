@@ -12,31 +12,45 @@
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  width: 82px;
-  padding: 17px 0;
+  padding: 18px 34px;
 
-  border: 2px solid $grey;
+  border: 2px solid rgba($color: $grey, $alpha: 0.1);
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 52px;
+  }
 }
 
 .add-to-cart__input-wrapper {
   position: relative;
+  margin: 7px 0;
 }
 
 .add-to-cart__radio {
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   opacity: 0;
-  width: 80px;
-  height: 50px;
+  width: 82px;
+  height: 54px;
+
+  &:checked + .add-to-cart__label {
+    border-color: $primary-400;
+  }
 }
 
-.add-to-cart__button.button {
+.add-to-cart__button {
   font-size: 17px;
   line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
   color: $white;
-  width: 260px;
+  width: 100%;
   height: 52px;
   background-color: $primary-400;
+  border: none;
+  margin: 16px auto;
+  padding: 18px;
 }

@@ -59,7 +59,9 @@
 .user__link-inner {
   @media (max-width: $mobile-width-only) {
     width: 320px;
-    padding-left: 25px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -68,8 +70,12 @@
 }
 
 .user__icon {
-  margin-right: 26px;
+  margin-right: 24px;
   fill-opacity: 0.2;
+
+  &--search {
+    margin-right: 28px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 31px;
