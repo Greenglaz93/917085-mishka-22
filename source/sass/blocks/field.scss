@@ -44,17 +44,19 @@
 .field__input {
   border: 0;
   border-bottom: 2px solid $black;
-  width: 260px;
-  height: 52px;
-  padding: 17px 0;
+  width: 100%;
+  padding: 12px 0 14px 0;
   font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   background-color: transparent;
 
+  &::placeholder {
+    color: rgba($color: $black, $alpha: 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     padding: 18px;
-    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,22 +76,27 @@
     }
   }
 
+  &--contacts {
+    padding-bottom: 16px;
+  }
+
   &--textarea {
     border: 2px solid $black;
-    padding: 17px;
+    padding: 16px;
     height: 142px;
-    margin: 10px 0;
   }
 }
 
 .field__input-wrapper {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .field__icon {
   position: absolute;
-  right: 5px;
-  bottom: 15px;
+  right: 6px;
+  bottom: 17px;
   transition: fill 0.1s linear;
 
   & path {
@@ -97,6 +104,11 @@
   }
 
   &--tel {
-    margin-right: 4px;
+    margin-right: 2px;
+  }
+
+  &--email {
+    right: 4px;
+    bottom: 15px;
   }
 }

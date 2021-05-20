@@ -31,6 +31,7 @@
 
 .page-footer__inner {
   @include wrapper;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;

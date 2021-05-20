@@ -1,5 +1,5 @@
 .order-form {
-  padding-bottom: 55px;
+  padding-bottom: 40px;
 }
 
 .order-form__group-wrapper {
@@ -9,14 +9,15 @@
 }
 
 .order-form__group {
-  border: 0;
-
   @include wrapper;
+  border: 0;
 }
 
 .order-form__remark {
+  display: inline-block;
   font-size: 14px;
   line-height: 16px;
+  margin: 0 0 15px 0;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -26,7 +27,8 @@
 .order-form__button {
   font-size: 17px;
   line-height: 16px;
-  margin: 0 auto;
+  margin: 15px auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin: 0;
