@@ -1,5 +1,5 @@
 .making {
-  padding: 10px 30px;
+  padding: 0 30px;
   position: relative;
 
   &::after {
@@ -52,7 +52,7 @@
 .making__title {
   display: flex;
   align-items: center;
-  padding: 22px 0 27px 34px;
+  padding: 20px 0 27px 34px;
   margin: 0;
   font-size: 17px;
   line-height: 24px;
@@ -141,7 +141,7 @@
 .making__inner {
   border: 1px solid $grey-236;
   border-top: none;
-  padding: 23px 31px 33px 34px;
+  padding: 21px 32px 31px 33px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 42px 46px 42px;

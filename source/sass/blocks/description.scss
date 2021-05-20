@@ -1,5 +1,5 @@
 .description {
-  padding: 28px;
+  padding: 24px 28px 10px;
 
   @media (min-width: $tablet-width) {
     padding-left: 33px;
@@ -15,12 +15,14 @@
 }
 
 .description__details {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .description__link {
-  display: block;
-
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -32,6 +34,8 @@
 }
 
 .description__title {
+  padding-top: 3px;
+  padding-bottom: 5px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -39,22 +43,30 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 8px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
     font-size: 20px;
   }
 }
 
 .description__options {
+  margin: 0;
   font-size: 13px;
+  line-height: 30px;
 }
 
 .description__order {
-  border-top: 1px solid $grey-236;
-  padding-top: 22px;
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
+  border-top: 1px solid $grey-236;
 }
 
 .description__price {
+  margin-top: 23px;
   line-height: 24px;
   font-weight: 700;
   color: $black;
@@ -67,6 +79,11 @@
 }
 
 .description__order-button {
+  width: 20px;
+  height: 19px;
+  display: block;
+  font-size: 0;
+
   &:hover,
   &:focus {
     .description__cart path {

@@ -1,5 +1,5 @@
 .catalog {
-  padding: 30px 0;
+  padding: 29px 0;
 
   @media (min-width: $desktop-width) {
     padding: 111px 50px 27px 50px;
@@ -20,7 +20,7 @@
 
 .catalog__item:not(:last-child) {
   @media (max-width: $tablet-width-only) {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 }
 
