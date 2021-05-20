@@ -5,7 +5,7 @@
 .toggles__item {
   display: block;
   padding: 0;
-  width: 130px;
+  width: calc(100% / 2);
   height: 52px;
   background-color: $white;
   background-image: url("../img/arrow.svg");

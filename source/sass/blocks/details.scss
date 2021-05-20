@@ -10,6 +10,12 @@
 .details__name {
   min-width: 97px;
   padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 82px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
 }
 
 .details__value {

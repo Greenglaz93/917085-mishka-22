@@ -1,5 +1,9 @@
 .author {
   font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+  }
 }
 
 .author__name {
