@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+  }
 }
 
 .author__name {
@@ -12,7 +16,7 @@
   font-style: normal;
   color: $black;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width-only) {
     font-size: 18px;
   }
 }

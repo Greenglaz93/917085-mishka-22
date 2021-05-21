@@ -32,6 +32,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 73px;
+
     &::after {
       width: 1050px;
       height: 23px;
@@ -54,7 +56,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1150px;
-    padding: 0 50px 163px 174px;
+    padding: 0 0 134px 174px;
+    column-gap: 20px;
   }
 }
 
@@ -112,11 +115,12 @@
 
   @media (min-width: $desktop-width) {
     width: 806px;
+    margin: 21px 0;
   }
 }
 
 .reviews__author {
-  max-width: 700px;
+  max-width: 650px;
   margin-bottom: 30px;
 }
 
@@ -135,5 +139,9 @@
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
   }
 }

@@ -16,9 +16,19 @@
     padding-top: 10px;
     padding-bottom: 11px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 14px;
+    padding-top: 7px;
+  }
 }
 
 .details__value {
   min-width: 162px;
   padding: 10px 0;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 14px;
+    padding-top: 7px;
+  }
 }

@@ -15,6 +15,10 @@
 
 .social__item:not(:last-child) {
   margin-right: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 24px;
+  }
 }
 
 .social__link {
