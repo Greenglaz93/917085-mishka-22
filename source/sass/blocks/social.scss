@@ -31,7 +31,7 @@
 
   &:hover,
   &:focus {
-    .social__icon path {
+    .social__icon {
       fill: $primary-link-hover;
       transition: 0.3s;
     }

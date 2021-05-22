@@ -40,12 +40,11 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
-    &:focus + .radio__name::before {
-      border-color: $primary-550;
-    }
+  &:focus + .radio__name::before {
+    border-color: $primary-550;
   }
 }
+
 
 .radio__name {
   display: flex;
@@ -61,17 +60,15 @@
     font-size: 19px;
   }
 
-  @media (min-width: $desktop-width) {
-    &:hover {
-      &::before {
-        border-color: $primary-550;
-      }
+  &:hover {
+    &::before {
+      border-color: $primary-550;
     }
+  }
 
-    &:active {
-      &::before {
-        border-color: rgba($color: $black, $alpha: 0.3);
-      }
+  &:active {
+    &::before {
+      border-color: rgba($color: $black, $alpha: 0.3);
     }
   }
 
