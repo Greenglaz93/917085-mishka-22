@@ -39,6 +39,11 @@
     padding: 25px 50px;
     display: grid;
     grid-template-areas: "video" "title" "inner";
+
+    &::after {
+      height: 288px;
+      bottom: 25px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +52,10 @@
     grid-template-rows: 172px max-content;
     grid-template-areas: "video title" "video inner";
     position: relative;
+
+    &::after {
+      bottom: 30px;
+    }
   }
 }
 
