@@ -105,17 +105,13 @@
 
   &:hover,
   &:focus {
-    .description__cart path {
+    .description__cart {
       opacity: 1;
       fill: $primary-400;
     }
   }
-}
 
-.description__order-button:active {
-  .description__cart {
-    path {
-      opacity: 0.3;
-    }
+  &:active .description__cart {
+    opacity: 0.3;
   }
 }
