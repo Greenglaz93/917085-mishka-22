@@ -16,7 +16,7 @@
 .social__item:not(:last-child) {
   margin-right: 25px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 24px;
   }
 }

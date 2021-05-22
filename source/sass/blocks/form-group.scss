@@ -33,15 +33,15 @@
     }
 
     &--name {
-      padding: 26px 50px;
+      padding: 21px 50px;
     }
 
     &--contacts {
-      padding: 22px 50px 38px 50px;
+      padding: 22px 50px 25px 50px;
     }
 
     &--add {
-      padding: 48px 50px;
+      padding: 49px 50px 45px 50px;
     }
   }
 
@@ -58,11 +58,15 @@
     }
 
     &--name {
-      padding: 29px 50px;
+      padding: 21px 50px;
     }
 
     &--contacts {
-      padding: 15px 50px 40px 50px;
+      padding: 15px 50px 25px 50px;
+    }
+
+    &--add {
+      padding: 50px 50px 41px 50px;
     }
   }
 }
@@ -128,12 +132,20 @@
     left: 111px;
     width: 115px;
 
+    &--name {
+      top: 51px;
+    }
+
     &--tel {
-      top: 61px;
+      top: 66px;
     }
 
     &--email {
-      top: 138px;
+      top: 144px;
+    }
+
+    &--add {
+      top: 70px;
     }
   }
 
@@ -168,6 +180,11 @@
 .form-group__list {
   @include clear-list;
 
+  &--colors {
+    display: grid;
+    row-gap: 23px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 2 / -1;
 
@@ -178,7 +195,7 @@
     }
 
     &--contacts {
-      padding-top: 20px;
+      padding-top: 18px;
     }
   }
 
@@ -191,27 +208,36 @@
       padding-left: 14px;
       padding-right: 24px;
     }
-  }
 
-  &--colors {
-    display: grid;
-    row-gap: 23px;
+    &--contacts {
+      padding-top: 24px;
+    }
   }
 }
 
 .form-group__item {
   margin-bottom: 10px;
 
+  &--name:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &--contacts:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
+
+    &--contacts:not(:last-child) {
+      margin-bottom: 14px;
+    }
   }
 
-  &--name:not(:last-child) {
-    margin-bottom: 11px;
-  }
-
-  &--contacts {
-    margin-bottom: 12px;
+  @media (min-width: $desktop-width) {
+    &--contacts:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 
