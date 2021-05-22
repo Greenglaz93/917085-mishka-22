@@ -28,7 +28,7 @@
 }
 
 .catalog__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin-bottom: 54px;
