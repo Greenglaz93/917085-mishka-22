@@ -1,5 +1,5 @@
 .contacts {
-  padding: 0 0 38px 0;
+  padding: 0 0 39px 0;
 
   @media (min-width: $desktop-width) {
     padding: 58px 0;
@@ -13,12 +13,12 @@
   @include content-wrapper;
   @include wrapper;
   padding-top: 38px;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     padding-top: 59px;
     background-size: auto 17px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +76,8 @@
   margin-bottom: 42px;
   display: grid;
   grid-template-columns: 44px 184px;
-  gap: 32px;
+  column-gap: 33px;
+  row-gap: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -105,7 +106,7 @@
 }
 
 .contacts__email {
-  display: inline-block;
+  padding-bottom: 2px;
   border-bottom: 1px solid $primary-550;
 
   &:hover,
@@ -117,6 +118,14 @@
 
   &:active {
     border-bottom: 1px solid rgba($primary-link-hover, 0.1);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 6px;
   }
 }
 

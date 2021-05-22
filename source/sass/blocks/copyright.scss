@@ -28,4 +28,12 @@
   font-weight: 700;
   color: $black;
   margin-right: 27px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 29px;
+  }
+}
+
+.copyright__logo {
+  fill: $primary-400;
 }

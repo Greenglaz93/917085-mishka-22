@@ -53,6 +53,15 @@
         background-image: url("../img/bg/hero-tablet@2x.jpg");
       }
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 158px;
+
+      &::after {
+        background-size: 1250px 34px;
+        bottom: -12px;
+      }
+    }
   }
 }
 

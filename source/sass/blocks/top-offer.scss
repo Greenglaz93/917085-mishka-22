@@ -11,7 +11,7 @@
     bottom: 0;
     background-image: url("../img/bg/zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: 320px 6px;
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
@@ -85,13 +85,13 @@
 
   @media (min-width: $tablet-width) {
     width: 100px;
-
     text-align: center;
     line-height: 17px;
-    margin-bottom: 0;
+    margin-right: 13px;
+    padding-bottom: 5px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 47px;
     width: 93px;
     padding-bottom: 6px;

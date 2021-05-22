@@ -47,3 +47,9 @@
     padding: 28px 0;
   }
 }
+
+.page-footer__social {
+  @media (min-width: $desktop-width) {
+    margin-right: 3px;
+  }
+}
