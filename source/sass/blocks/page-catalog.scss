@@ -1,6 +1,10 @@
 .page-catalog__making {
   @include wrapper;
-  margin-bottom: 38px;
+  margin-bottom: 59px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 77px;

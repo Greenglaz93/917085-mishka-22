@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 25px 50px;
+    padding: 23px 50px;
     display: grid;
     grid-template-areas: "video" "title" "inner";
 
@@ -159,7 +159,7 @@
   padding: 21px 32px 31px 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 42px 46px 40px;
+    padding: 9px 42px 46px 40px;
     grid-area: inner;
   }
 

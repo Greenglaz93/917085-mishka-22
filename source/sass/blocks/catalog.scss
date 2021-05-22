@@ -1,5 +1,6 @@
 .catalog {
-  padding: 29px 0;
+  padding-top: 29px;
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     padding-top: 73px;
@@ -22,12 +23,18 @@
   }
 }
 
-.catalog__item:not(:last-child) {
-  @media (max-width: $tablet-width-only) {
-    margin-bottom: 54px;
-  }
-}
-
 .catalog__item {
   @include wrapper;
+}
+
+.catalog__item:not(:last-child) {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
