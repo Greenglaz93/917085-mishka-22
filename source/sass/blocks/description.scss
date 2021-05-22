@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 32px 16px 28px;
+    padding: 23px 32px 0 26px;
     flex-grow: 1;
   }
 }
@@ -67,6 +67,11 @@
   align-items: baseline;
   justify-content: space-between;
   border-top: 1px solid $grey-236;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 12px;
+    margin-bottom: 7px;
+  }
 }
 
 .description__price {
@@ -92,7 +97,7 @@
   display: block;
   font-size: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width-only) {
     margin-right: 4px;
   }
 

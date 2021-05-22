@@ -1,4 +1,8 @@
 .page-catalog__making {
   @include wrapper;
   margin-bottom: 38px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 77px;
+  }
 }
