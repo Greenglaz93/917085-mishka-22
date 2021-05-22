@@ -80,6 +80,7 @@
       <h1 class="main-header__title">Вязание на заказ</h1>
     </header>
     <section class="page-form">
+      <h2 class="visually-hidden">Форма для заказа изделия на заказ</h2>
       <p class="page-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="page-form__form order-form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="order-form__group form-group form-group--type">
@@ -172,23 +173,19 @@
               <li class="form-group__item form-group__item--contacts">
                 <label class="form-group__field field">
                   <span class="form-group__heading form-group__heading--tel">Тел</span>
-                  <div class="field__input-wrapper">
-                    <input class="field__input field__input--contacts" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
-                    <svg class="field__icon field__icon--tel" aria-hidden="true" focusable="false" width="25" height="24">
-                      <use href="img/sprite.svg#icon-phone"></use>
-                    </svg>
-                  </div>
+                  <input class="field__input field__input--contacts" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
+                  <svg class="field__icon field__icon--tel" aria-hidden="true" focusable="false" width="25" height="24">
+                    <use href="img/sprite.svg#icon-phone"></use>
+                  </svg>
                 </label>
               </li>
               <li class="form-group__item form-group__item--contacts">
                 <label class="form-group__field field">
                   <span class="form-group__heading form-group__heading--email">E-mail</span>
-                  <div class="field__input-wrapper">
-                    <input class="field__input field__input--contacts" type="email" name="email" placeholder="Ваш Email*" required>
-                    <svg class="field__icon field__icon--email" aria-hidden="true" focusable="false" width="32" height="21">
-                      <use href="img/sprite.svg#icon-mail"></use>
-                    </svg>
-                  </div>
+                  <input class="field__input field__input--contacts" type="email" name="email" placeholder="Ваш Email*" required>
+                  <svg class="field__icon field__icon--email" aria-hidden="true" focusable="false" width="32" height="21">
+                    <use href="img/sprite.svg#icon-mail"></use>
+                  </svg>
                 </label>
               </li>
             </ul>

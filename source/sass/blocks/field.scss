@@ -70,7 +70,7 @@
   &:active {
     border-color: $primary-550;
 
-    & + .field__icon path {
+    & + .field__icon {
       fill: $primary-550;
     }
   }
@@ -95,29 +95,16 @@
   }
 }
 
-.field__input-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
 .field__icon {
   position: absolute;
-  right: 6px;
-  bottom: 17px;
+  right: 7px;
+  bottom: 16px;
   transition: fill 0.1s linear;
-
-  & path {
-    fill: rgba($color: $black, $alpha: 0.2);
-  }
-
-  &--tel {
-    margin-right: 2px;
-  }
+  fill: rgba($color: $black, $alpha: 0.2);
 
   &--email {
-    right: 4px;
-    bottom: 15px;
+    right: 3px;
+    bottom: 16px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
