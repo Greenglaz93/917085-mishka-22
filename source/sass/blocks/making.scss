@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 50px;
+    padding: 25px 50px;
     display: grid;
     grid-template-areas: "video" "title" "inner";
   }
@@ -62,7 +62,8 @@
   border-bottom: none;
 
   @media (min-width: $tablet-width) {
-    padding: 41px 33px 15px 43px;
+    align-items: baseline;
+    padding: 38px 33px 15px 40px;
     font-size: 20px;
     border-top: none;
     grid-area: title;
@@ -84,6 +85,10 @@
     background-image: url("../img/video.svg");
     background-size: 32px 22px;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 28px;
+    }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 27px;
@@ -144,7 +149,7 @@
   padding: 21px 32px 31px 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 42px 46px 42px;
+    padding: 10px 42px 46px 40px;
     grid-area: inner;
   }
 
@@ -163,6 +168,7 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
