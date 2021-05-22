@@ -116,7 +116,7 @@
     bottom: 15px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width-only) {
     right: 25px;
 
     &--email {

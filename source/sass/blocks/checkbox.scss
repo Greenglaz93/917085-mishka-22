@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 81px;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   width: 200px;
+  // }
 }
 
 .checkbox__input {
@@ -67,6 +71,10 @@
   @media (min-width: $tablet-width) {
     min-height: 52px;
     font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 150px;
   }
 
   &:hover {
