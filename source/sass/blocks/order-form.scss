@@ -1,5 +1,9 @@
 .order-form {
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .order-form__group-wrapper {
@@ -21,6 +25,9 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 10px 0;
   }
 }
 
@@ -32,6 +39,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 230px;
   }
 }
 

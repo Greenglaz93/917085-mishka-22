@@ -1,8 +1,8 @@
 .field {
   &--fullname {
     @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: max-content 1fr;
+      display: flex;
+      align-items: baseline;
     }
   }
 }
@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 24px;
-    padding: 18px 0;
+    font-size: 19px;
   }
 }
 
@@ -57,23 +57,27 @@
 
   @media (min-width: $tablet-width) {
     padding: 18px;
+    font-size: 19px;
+    border-width: 3px;
+
+    &--name {
+      padding: 16px 18px 14px 18px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    &:hover,
-    &:focus,
-    &:active {
-      border-color: $primary-550;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $primary-550;
 
-      & + .field__icon path {
-        fill: $primary-550;
-      }
+    & + .field__icon path {
+      fill: $primary-550;
     }
+  }
 
-    &:active,
-    &:focus {
-      outline: none;
-    }
+  &:active,
+  &:focus {
+    outline: none;
   }
 
   &--contacts {
@@ -110,5 +114,13 @@
   &--email {
     right: 4px;
     bottom: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 25px;
+
+    &--email {
+      right: 22px;
+    }
   }
 }

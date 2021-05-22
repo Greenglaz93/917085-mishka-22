@@ -20,13 +20,34 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 50px;
+    padding: 37px 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    &--type {
+      padding-bottom: 25px;
+    }
+
+    &--colors {
+      padding: 50px;
+    }
+
+    &--name {
+      padding: 26px 50px;
+    }
+
+    &--contacts {
+      padding: 22px 50px 38px 50px;
+    }
+
+    &--add {
+      padding: 48px 50px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(6, 1fr);
+    padding: 45px 50px;
   }
 }
 
@@ -47,7 +68,8 @@
     margin-bottom: 10px;
   }
 
-  &--name {
+  &--name,
+  &--email {
     margin-bottom: 10px;
   }
 
@@ -61,9 +83,29 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 50px;
+    top: 54px;
     left: 50px;
     max-width: 170px;
+
+    &--colors {
+      top: 60px;
+    }
+
+    &--name {
+      top: 48px;
+    }
+
+    &--tel {
+      top: 67px;
+    }
+
+    &--email {
+      top: 145px;
+    }
+
+    &--add {
+      top: 70px;
+    }
   }
 
   &::after {
@@ -94,51 +136,51 @@
   }
 }
 
-.form-group__heading--email {
-  margin-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    top: 125px;
-  }
-}
-
 .form-group__list {
   @include clear-list;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / -1;
-  }
 
-  @media (min-width: $desktop-width) {
-    grid-column: 2 / -2;
-  }
-
-  &--colors {
-    display: grid;
-    row-gap: 23px;
-
-    @media (min-width: $tablet-width) {
+    &--colors {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
     }
 
-    @media (min-width: $desktop-width) {
+    &--contacts {
+      padding-top: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -2;
+
+    &--colors {
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-end: -1;
     }
+  }
+
+  &--colors {
+    display: grid;
+    row-gap: 23px;
   }
 }
 
 .form-group__item {
   margin-bottom: 10px;
 
-  &--name:not(:last-child) {
-    margin-bottom: 16px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
   }
 
-  &--contacts:not(:last-child) {
-    margin-bottom: 35px;
+  &--name:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &--contacts {
+    margin-bottom: 12px;
   }
 }
 
