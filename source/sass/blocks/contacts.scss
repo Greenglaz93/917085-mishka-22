@@ -1,6 +1,10 @@
 .contacts {
   padding: 0 0 39px 0;
 
+  @media (min-width: $tablet-width) {
+    padding: 59px 0 40px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 58px 0;
     display: grid;
@@ -10,15 +14,13 @@
 }
 
 .contacts__inner {
-  @include content-wrapper;
   @include wrapper;
-  padding-top: 38px;
-  padding-bottom: 16px;
+  padding: 38px 30px 14px 29px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 59px;
+    @include content-wrapper;
     background-size: auto 17px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,8 +78,8 @@
   margin-bottom: 42px;
   display: grid;
   grid-template-columns: 44px 184px;
-  column-gap: 33px;
-  row-gap: 26px;
+  column-gap: 34px;
+  row-gap: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -121,7 +123,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 4px;
+    padding-bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -131,7 +133,7 @@
 
 .contacts__map {
   width: 100%;
-  margin: 0 auto 33px;
+  margin: 0 auto 34px;
 
   @media (min-width: $tablet-width) {
     height: 457px;
