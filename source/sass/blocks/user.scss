@@ -41,12 +41,11 @@
   &:hover,
   &:focus {
     .user__title {
-      transition: 0.3s;
+      transition: 0.1s linear;
       opacity: 0.6;
     }
 
     .user__icon {
-      transition: 0.3s;
       fill: $primary-400;
       fill-opacity: 1;
     }

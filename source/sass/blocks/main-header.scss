@@ -17,7 +17,7 @@
       background-image: url("../img/bg/zigzag-fill.svg");
       background-repeat: repeat-x;
       background-position: center center;
-      background-size: contain;
+      background-size: 770px 24px;
       z-index: 2;
     }
   }
@@ -28,6 +28,7 @@
     &::after {
       bottom: -10px;
       height: 34px;
+      background-size: 1150px 34px;
     }
   }
 
