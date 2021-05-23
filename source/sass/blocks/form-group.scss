@@ -33,7 +33,7 @@
     }
 
     &--name {
-      padding: 21px 50px;
+      padding: 21px 50px 27px;
     }
 
     &--contacts {
@@ -41,7 +41,7 @@
     }
 
     &--add {
-      padding: 49px 50px 45px 50px;
+      padding: 51px 50px 45px 50px;
     }
   }
 
@@ -50,7 +50,7 @@
     padding: 45px 50px;
 
     &--type {
-      padding: 36px 50px 24px 50px;
+      padding: 36px 50px 26px 50px;
     }
 
     &--colors {
@@ -58,11 +58,11 @@
     }
 
     &--name {
-      padding: 21px 50px;
+      padding: 21px 50px 26px;
     }
 
     &--contacts {
-      padding: 15px 50px 25px 50px;
+      padding: 15px 50px 27px 50px;
     }
 
     &--add {
@@ -235,16 +235,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
 
     &--contacts:not(:last-child) {
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--contacts:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 13px;
     }
   }
 }

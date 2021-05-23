@@ -7,28 +7,32 @@
   border-bottom: 1px solid $grey-236;
 }
 
-.details__name {
-  min-width: 97px;
-  padding: 10px 0;
+.details__name,
+.details__value {
+  padding-top: 8px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    min-width: 82px;
-    padding-top: 10px;
-    padding-bottom: 11px;
+    padding: 9px 0 11px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 14px;
-    padding-top: 7px;
+    padding: 7px 0 12px;
+  }
+}
+
+.details__name {
+  min-width: 97px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 82px;
   }
 }
 
 .details__value {
   min-width: 162px;
-  padding: 10px 0;
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 14px;
-    padding-top: 7px;
-  }
 }

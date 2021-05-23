@@ -8,17 +8,20 @@
   width: calc(100% / 2);
   height: 52px;
   background-color: $white;
-  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
 
-  @media (max-width: $mobile-width-only) {
-    border: 1px solid $grey-236;
+  &--prev {
+    background-image: url("../img/arrow-left.svg");
   }
 
   &--next {
-    transform: rotate(180deg);
+    background-image: url("../img/arrow-right.svg");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    border: 1px solid $grey-236;
   }
 
   &:hover,
