@@ -1,5 +1,5 @@
 .making {
-  padding: 10px 30px;
+  padding: 0 30px;
   position: relative;
 
   &::after {
@@ -9,17 +9,6 @@
     height: 507px;
     bottom: 10px;
     right: 30px;
-
-    @media (min-width: $tablet-width) {
-      right: 50px;
-      height: 304px;
-      width: 668px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 367px;
-      height: 455px;
-    }
   }
 
   &:hover,
@@ -36,23 +25,37 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 50px;
+    padding: 23px 50px;
     display: grid;
     grid-template-areas: "video" "title" "inner";
+
+    &::after {
+      right: 50px;
+      width: 668px;
+      height: 288px;
+      bottom: 25px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    padding: 29px 50px;
     grid-template-columns: 683px 1fr;
     grid-template-rows: 172px max-content;
     grid-template-areas: "video title" "video inner";
     position: relative;
+
+    &::after {
+      bottom: 30px;
+      width: 367px;
+      height: 455px;
+    }
   }
 }
 
 .making__title {
   display: flex;
   align-items: center;
-  padding: 22px 0 27px 34px;
+  padding: 20px 0 27px 34px;
   margin: 0;
   font-size: 17px;
   line-height: 24px;
@@ -62,7 +65,8 @@
   border-bottom: none;
 
   @media (min-width: $tablet-width) {
-    padding: 41px 33px 15px 43px;
+    align-items: baseline;
+    padding: 38px 33px 15px 40px;
     font-size: 20px;
     border-top: none;
     grid-area: title;
@@ -71,7 +75,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
-    padding: 47px 110px 14px 79px;
+    padding: 47px 110px 4px 79px;
     border-left: none;
     border-top: 1px solid $grey-236;
   }
@@ -84,6 +88,10 @@
     background-image: url("../img/video.svg");
     background-size: 32px 22px;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 28px;
+    }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 27px;
@@ -141,15 +149,15 @@
 .making__inner {
   border: 1px solid $grey-236;
   border-top: none;
-  padding: 23px 31px 33px 34px;
+  padding: 21px 32px 31px 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 42px 46px 42px;
+    padding: 9px 42px 46px 40px;
     grid-area: inner;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 79px;
+    padding: 0 57px 0 79px;
     margin-bottom: 0;
     border-left: none;
   }
@@ -163,10 +171,12 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    margin-bottom: 53px;
   }
 }
 

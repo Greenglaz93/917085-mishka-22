@@ -13,6 +13,12 @@
   }
 }
 
+.categories-list__item {
+  @media (min-width: $desktop-width) {
+    margin-right: 5px;
+  }
+}
+
 .categories-list__link {
   @media (min-width: $desktop-width) {
     display: block;

@@ -17,7 +17,7 @@
 
   &:hover,
   &:focus {
-    .page-footer__logo path {
+    .page-footer__logo {
       fill: $primary-link-hover;
       transition: 0.3s;
     }
@@ -31,6 +31,7 @@
 
 .page-footer__inner {
   @include wrapper;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;

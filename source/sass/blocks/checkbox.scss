@@ -4,8 +4,12 @@
   padding-left: 61px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 78px;
+    padding-left: 81px;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   width: 200px;
+  // }
 }
 
 .checkbox__input {
@@ -37,7 +41,7 @@
 
     @media (min-width: $tablet-width) {
       top: 10px;
-      left: 10px;
+      left: 9px;
       width: 32px;
       height: 32px;
       background-size: 32px 22px;
@@ -66,19 +70,22 @@
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
+    font-size: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    &:hover {
-      &::before {
-        border-color: $primary-550;
-      }
-    }
+    width: 150px;
+  }
 
-    &:active {
-      &::before {
-        border-color: rgba($color: $black, $alpha: 0.3);
-      }
+  &:hover {
+    &::before {
+      border-color: $primary-550;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: rgba($color: $black, $alpha: 0.3);
     }
   }
 

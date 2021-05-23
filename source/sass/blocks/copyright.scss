@@ -9,7 +9,7 @@
 
   &:hover,
   &:focus {
-    .copyright__logo path {
+    .copyright__logo {
       fill: $primary-link-hover;
       transition: 0.3s;
     }
@@ -27,5 +27,13 @@
   line-height: 18px;
   font-weight: 700;
   color: $black;
-  margin-right: 39px;
+  margin-right: 27px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 27px;
+  }
+}
+
+.copyright__logo {
+  fill: $primary-400;
 }

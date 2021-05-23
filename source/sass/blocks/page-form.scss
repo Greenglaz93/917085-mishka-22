@@ -1,12 +1,12 @@
 .page-form {
-  padding-top: 17px;
+  padding-top: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 54px;
+    padding-top: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 99px;
+    padding-top: 83px;
   }
 }
 
@@ -14,11 +14,14 @@
   @include wrapper;
   padding: 0 30px;
   font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     padding: 0 100px 0 50px;
-    margin-bottom: 43px;
+    margin: 27px auto;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {

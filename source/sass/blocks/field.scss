@@ -1,8 +1,8 @@
 .field {
   &--fullname {
     @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: max-content 1fr;
+      display: flex;
+      align-items: baseline;
     }
   }
 }
@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 24px;
-    padding: 18px 0;
+    font-size: 19px;
   }
 }
 
@@ -44,59 +44,74 @@
 .field__input {
   border: 0;
   border-bottom: 2px solid $black;
-  width: 260px;
-  height: 52px;
-  padding: 17px 0;
+  width: 100%;
+  padding: 12px 0 14px 0;
   font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   background-color: transparent;
 
-  @media (min-width: $tablet-width) {
-    padding: 18px;
-    width: 100%;
+  &::placeholder {
+    color: rgba($color: $black, $alpha: 0.3);
   }
 
-  @media (min-width: $desktop-width) {
-    &:hover,
-    &:focus,
-    &:active {
-      border-color: $primary-550;
+  @media (min-width: $tablet-width) {
+    padding: 18px;
+    font-size: 19px;
+    border-width: 3px;
 
-      & + .field__icon path {
-        fill: $primary-550;
-      }
+    &--name {
+      padding: 16px 18px 14px 18px;
     }
+  }
 
-    &:active,
-    &:focus {
-      outline: none;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $primary-550;
+
+    & + .field__icon {
+      fill: $primary-550;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &--contacts {
+    padding-bottom: 16px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 20px;
     }
   }
 
   &--textarea {
     border: 2px solid $black;
-    padding: 17px;
+    padding: 16px;
     height: 142px;
-    margin: 10px 0;
   }
-}
-
-.field__input-wrapper {
-  position: relative;
 }
 
 .field__icon {
   position: absolute;
-  right: 5px;
-  bottom: 15px;
+  right: 7px;
+  bottom: 16px;
   transition: fill 0.1s linear;
+  fill: rgba($color: $black, $alpha: 0.2);
 
-  & path {
-    fill: rgba($color: $black, $alpha: 0.2);
+  &--email {
+    right: 3px;
+    bottom: 16px;
   }
 
-  &--tel {
-    margin-right: 4px;
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    right: 25px;
+
+    &--email {
+      right: 22px;
+    }
   }
 }

@@ -1,20 +1,27 @@
 .author {
   font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+  }
 }
 
 .author__name {
+  font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   font-style: normal;
   color: $black;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     font-size: 18px;
   }
 }
 
 .author__login {
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
+  margin: 0;
 }

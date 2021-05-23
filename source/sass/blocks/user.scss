@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 53px;
   }
 }
 
@@ -44,7 +45,7 @@
       opacity: 0.6;
     }
 
-    .user__icon path {
+    .user__icon {
       transition: 0.3s;
       fill: $primary-400;
       fill-opacity: 1;
@@ -57,19 +58,29 @@
 }
 
 .user__link-inner {
+  display: flex;
+  align-items: center;
+
   @media (max-width: $mobile-width-only) {
     width: 320px;
-    padding-left: 25px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 32px 0;
+    padding-top: 33px;
+    padding-bottom: 30px;
   }
 }
 
 .user__icon {
-  margin-right: 26px;
+  margin-right: 24px;
   fill-opacity: 0.2;
+
+  &--search {
+    margin-right: 28px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 31px;

@@ -6,14 +6,13 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding-left: 30px;
+    padding-left: 31px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 24px;
-    width: 450px;
-    padding-left: 19px;
+    padding-left: 17px;
   }
 }
 
@@ -28,16 +27,21 @@
 }
 
 .site-list__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 5px;
+  }
+
   @media (min-width: $desktop-width) {
     border-right: 1px solid $grey-236;
+    margin-right: 0;
   }
 }
 
 .site-list__link {
   display: block;
   padding-left: 75px;
-  padding-top: 26px;
-  padding-bottom: 28px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   max-width: 320px;
   margin: 0 auto;
 
@@ -52,11 +56,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 18px;
+    padding: 23px 15px 18px 18px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 31px 26px 33px 35px;
+    padding: 32px 38px 28px 32px;
   }
 
   &:hover,

@@ -35,38 +35,26 @@
 
   padding: 24px 160px 31px 30px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-    padding: 26px 167px 39px 36px;
-    transition: transform 0.3s ease-in-out;
-
-    &:hover,
-    &:focus {
-      transform: translateY(-5px);
-
-      &::after {
-        opacity: 0.7;
-      }
-    }
-
-    &:active {
-      &::after {
-        opacity: 0.3;
-      }
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.7;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 26px 350px 39px 37px;
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   &::after {
     @include pseudo;
     width: 62px;
     height: 62px;
-    right: 16px;
-    top: 23px;
+    right: 25px;
+    top: 24px;
     background-repeat: no-repeat;
     background-position: center center;
     opacity: 0.5;
@@ -75,32 +63,56 @@
   &--interior {
     background-color: $primary-400;
 
-    &::after {
-      background-image: url("../img/interior.svg");
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $primary-575;
     }
 
-    @media (min-width: $desktop-width) {
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: $primary-575;
-      }
+    &::after {
+      background-image: url("../img/interior.svg");
     }
   }
 
   &--toys {
     background-color: $primary-500;
 
-    &::after {
-      background-image: url("../img/toy.svg");
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $primary-link-hover;
     }
 
-    @media (min-width: $desktop-width) {
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: $primary-link-hover;
+    &::after {
+      background-image: url("../img/toy.svg");
+      right: 26px;
+      top: 21px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 26px 167px 39px 36px;
+
+    &::after {
+      top: 30px;
+    }
+
+    &--toys {
+      &::after {
+        right: 33px;
       }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 350px 39px 37px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
     }
   }
 }

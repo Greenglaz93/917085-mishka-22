@@ -1,7 +1,11 @@
 .about-us {
   font-weight: 700;
   color: $black;
-  padding-top: 31px;
+  padding-top: 32px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+  }
 }
 
 .about-us__inner {
@@ -17,6 +21,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
   }
 }
 
@@ -28,11 +37,18 @@
 
 .about-us__title {
   font-size: 25px;
-  margin: 0 0 28px;
+  margin: 0 0 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 22px;
   }
 }
 
@@ -41,26 +57,32 @@
   line-height: 20px;
   position: relative;
   padding-top: 60px;
-  padding-right: 34px;
-  margin-bottom: 30px;
+  padding-right: 10px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-
+    padding-top: 63px;
     width: 334px;
-    margin-bottom: 57px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    width: 350px;
   }
 
   &::before {
     @include pseudo;
     background-repeat: no-repeat;
     left: 0;
-    top: 6px;
+    top: 7px;
   }
 
   &--eco {
     &::before {
+      left: 8px;
       width: 33px;
       height: 38px;
       background-image: url("../img/eco.svg");
@@ -77,6 +99,8 @@
 
   &--likes {
     &::before {
+      left: 7px;
+      top: 12px;
       width: 34px;
       height: 27px;
       background-image: url("../img/likes.svg");
@@ -85,6 +109,8 @@
 
   &--love {
     &::before {
+      left: 3px;
+      top: 9px;
       width: 35px;
       height: 34px;
       background-image: url("../img/love.svg");
@@ -93,6 +119,8 @@
 
   &--support {
     &::before {
+      left: -5px;
+      top: 10px;
       width: 55px;
       height: 23px;
       background-image: url("../img/support.svg");
@@ -101,6 +129,7 @@
 
   &--gift {
     &::before {
+      left: 3px;
       width: 33px;
       height: 32px;
       background-image: url("../img/gift.svg");

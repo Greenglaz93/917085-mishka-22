@@ -1,16 +1,73 @@
 .form-group {
-  padding: 0 30px;
+  padding: 14px 30px;
   position: relative;
+
+  &--colors {
+    margin-bottom: 19px;
+  }
+
+  &--name {
+    padding-bottom: 10px;
+  }
+
+  &--contacts {
+    padding-bottom: 10px;
+  }
+
+  &--add {
+    padding-bottom: 1px;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 50px;
+    padding: 37px 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    &--type {
+      padding-bottom: 25px;
+    }
+
+    &--colors {
+      padding: 50px;
+    }
+
+    &--name {
+      padding: 21px 50px;
+    }
+
+    &--contacts {
+      padding: 22px 50px 25px 50px;
+    }
+
+    &--add {
+      padding: 49px 50px 45px 50px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(6, 1fr);
+    padding: 45px 50px;
+
+    &--type {
+      padding: 36px 50px 24px 50px;
+    }
+
+    &--colors {
+      padding: 50px 136px 50px 50px;
+    }
+
+    &--name {
+      padding: 21px 50px;
+    }
+
+    &--contacts {
+      padding: 15px 50px 25px 50px;
+    }
+
+    &--add {
+      padding: 50px 50px 41px 50px;
+    }
   }
 }
 
@@ -18,18 +75,82 @@
   width: 260px;
   display: flex;
   align-items: center;
-  padding: 18px 0;
+  margin-bottom: 17px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
+  padding: 0;
   text-transform: uppercase;
   color: $primary-550;
 
+  &--colors {
+    padding-top: 7px;
+    margin-bottom: 10px;
+  }
+
+  &--name,
+  &--email {
+    margin-bottom: 10px;
+  }
+
+  &--tel {
+    margin-bottom: 9px;
+  }
+
+  &--add {
+    margin-bottom: 22px;
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 50px;
+    top: 54px;
     left: 50px;
     max-width: 170px;
+
+    &--colors {
+      top: 60px;
+    }
+
+    &--name {
+      top: 48px;
+    }
+
+    &--tel {
+      left: -167px;
+      top: 25px;
+    }
+
+    &--email {
+      left: -167px;
+      top: 26px;
+    }
+
+    &--add {
+      top: 70px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 111px;
+    width: 115px;
+
+    &--name {
+      top: 51px;
+    }
+
+    &--tel {
+      left: -114px;
+      top: 28px;
+    }
+
+    &--email {
+      left: -114px;
+      top: 30px;
+    }
+
+    &--add {
+      top: 70px;
+    }
   }
 
   &::after {
@@ -37,47 +158,95 @@
       content: "";
       flex-grow: 1;
       border-bottom: 1px solid $primary-550;
-      margin-left: 20px;
+      margin-left: 23px;
     }
   }
-}
 
-.form-group__heading--email {
-  @media (min-width: $tablet-width) {
-    top: 125px;
+  &--tel::after {
+    @media (max-width: $mobile-width-only) {
+      margin-left: 30px;
+    }
+  }
+
+  &--colors::after {
+    @media (max-width: $mobile-width-only) {
+      margin-left: 17px;
+    }
+  }
+
+  &--name::after {
+    @media (max-width: $mobile-width-only) {
+      margin-left: 18px;
+    }
   }
 }
 
 .form-group__list {
   @include clear-list;
 
-  @media (min-width: $tablet-width) {
-    grid-column: 2 / -1;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 2 / -2;
-  }
-
   &--colors {
     display: grid;
     row-gap: 23px;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+
+    &--colors {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
     }
 
-    @media (min-width: $desktop-width) {
+    &--contacts {
+      padding-top: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -2;
+
+    &--colors {
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-end: -1;
+      padding-left: 14px;
+      padding-right: 24px;
+    }
+
+    &--contacts {
+      padding-top: 24px;
     }
   }
 }
 
 .form-group__item {
-  margin-bottom: 23px;
+  margin-bottom: 10px;
+
+  &--name:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &--contacts {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+
+    &--contacts:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--contacts:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .form-group__add {
