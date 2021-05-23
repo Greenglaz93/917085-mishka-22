@@ -15,6 +15,10 @@
   @media (min-width: $tablet-width) {
     padding: 9px 0 11px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 0 12px;
+  }
 }
 
 .details__name {
@@ -25,16 +29,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 14px;
-    padding-top: 7px;
+    min-width: 82px;
   }
 }
 
 .details__value {
   min-width: 162px;
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 14px;
-    padding-top: 7px;
-  }
 }
