@@ -7,7 +7,6 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -21,10 +20,9 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(postcss([csso()]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
